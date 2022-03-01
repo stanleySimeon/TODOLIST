@@ -29,7 +29,6 @@ Additional description about the project and its features.
 
 run `python -m http:server` or `npm install -g live-server` after run `live-server`
 
-
 👤 **Author**
 - Stanley SIMEON
 - GitHub: [https://github.com/mstanley-me]
