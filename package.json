@@ -4,16 +4,16 @@
   "description": "This project allow users to add and remove to Do from a list...",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack",
     "start": "webpack serve --open",
-    "build": "webpack --mode development"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stanleySimeon/TODO.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Stanley SIMEON",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/stanleySimeon/TODO/issues"
