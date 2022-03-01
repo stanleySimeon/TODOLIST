@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 30%;
+  height: 450px;
+  border-radius: 10px;
+  border: 1px solid rgb(6 20 214);
+  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .header {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #494848;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .header h1 {
+  font-size: 1.2rem;
+  color: rgb(61 61 61);
+}
+
+.container .header .clear {
+  width: 50px;
+  color: rgb(61, 61, 61);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.content {
+  height: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content .add-item {
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #808080;
+}
+
+.add-item #input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: rgb(61 61 61);
+  font-style: italic;
+  font-size: 1rem;
+  height: 35px;
+}
+
+#addBtn {
+  width: 50px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  color: rgb(61, 61, 61);
+  font-size: 1.2rem;
+}
+
+#list {
+  height: 260px;
+}
+
+.list {
+  max-height: 220px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #808080;
+}
+
+.item .ch {
+  font-size: 1.4rem;
+  color: rgb(61 61 61);
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#listItemContainer #checkbox {
+  cursor: pointer;
+}
+
+#listItemContainer .editIcon,
+.removeIcon {
+  cursor: pointer;
+}
+
+p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  left: 50px;
+  color: rgb(61 61 61);
+  max-width: 285px;
+}
+
+#clearButton {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  color: rgb(61 61 61);
+  bottom: 0;
+}
+
+#clearButton:hover {
+  background-color: rgb(8 69 236);
+  color: #fff;
+}
+
+#listItemContainer {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+#listItemContainer #inputValue {
+  width: 85%;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: none;
+  outline: none;
+}
