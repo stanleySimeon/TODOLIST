@@ -110,7 +110,7 @@ body {
   overflow-y: auto;
 }
 
-.todo{
+.todo {
   display: flex;
   width: 100%;
   min-height: 35px;
@@ -120,13 +120,13 @@ body {
   border-bottom: 1px solid grey;
 }
 
-#checkbox{
+#checkbox {
   margin-right: 10px;
   width: 18px;
   height: 18px;
 }
 
-.rmvButton{
+.rmvButton {
   border: none;
   outline: none;
 }
