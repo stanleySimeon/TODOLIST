@@ -107,7 +107,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-height: 280px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .todo{
@@ -121,19 +121,13 @@ body {
 }
 
 #checkbox{
+  margin-right: 10px;
   width: 18px;
   height: 18px;
 }
 
-.item {
-  width: 100%;
-  height: 50px;
-  padding: 15px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #808080;
+#rmvButton{
+  border: none;
 }
 
 #listItemContainer #checkbox {
@@ -158,6 +152,7 @@ body {
   border: none;
   color: rgb(61 61 61);
   bottom: 0;
+  user-select: none;
 }
 
 #clearButton:hover {

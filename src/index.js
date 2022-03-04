@@ -160,16 +160,24 @@ export const createTodo = () => {
         }
       });
 
+      const buttonRmv = document.createElement('button');
+      buttonRmv.id = 'rmvButton';
+      buttonRmv.type = 'button';
+      list.appendChild(buttonRmv);
+
       const removeIcon = document.createElement('i');
       removeIcon.className = 'fa fa-trash-alt removeIcon';
       removeIcon.id = map.index;
-      list.appendChild(removeIcon);
+      buttonRmv.appendChild(removeIcon);
 
-      removeIcon.onclick = () => {
-        // if (localStorage.getItem('todos', todo)) {
-        inputElement.innerText = 'hello';
-        // }
-      };
+      buttonRmv.addEventListener('click', () => {
+        if (localStorage.getItem('todos', todo)) {
+          if (map.completed === true) {
+            todo.removeTodo();
+            localStorage.clear();
+          }
+        }
+      });
 
       inputElement.addEventListener('keyup', (e) => {
         if (e.target.id === 'inputValue') {
