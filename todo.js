@@ -139,27 +139,25 @@ export const createTodo = () => {
       list.appendChild(inputElement);
 
       inputElement.addEventListener('click', () => {
-        if (localStorage.getItem('todos', todo)) {
-          inputElement.contentEditable = true;
-        }
+        inputElement.contentEditable = true;
       });
 
       const buttonRmv = document.createElement('button');
-      buttonRmv.id = 'rmvButton';
+      // buttonRmv.id = 'rmvButton';
       buttonRmv.type = 'button';
+      buttonRmv.id = map.index;
       list.appendChild(buttonRmv);
 
       const removeIcon = document.createElement('i');
       removeIcon.className = 'fa fa-trash-alt removeIcon';
-      removeIcon.id = map.index;
       buttonRmv.appendChild(removeIcon);
 
       buttonRmv.addEventListener('click', () => {
-        if (localStorage.getItem('todos', todo)) {
-          if (map.completed === true) {
-            list.remove();
-            localStorage.clear();
-            window.location.reload();
+        for (let i = 0; i < list.length; list + 1) {
+          if (localStorage.getItem('todos', todo)) {
+            if (todo.completed === true) {
+              localStorage.removeItem('list');
+            }
           }
         }
       });
@@ -171,6 +169,7 @@ export const createTodo = () => {
           } else {
             todo.editItem(e.target, map.index);
           }
+          localStorage.setItem('todos', todo);
         }
       });
 
