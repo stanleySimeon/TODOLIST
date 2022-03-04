@@ -126,8 +126,9 @@ body {
   height: 18px;
 }
 
-#rmvButton{
+.rmvButton{
   border: none;
+  outline: none;
 }
 
 #listItemContainer #checkbox {

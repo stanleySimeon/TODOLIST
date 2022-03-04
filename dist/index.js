@@ -357,7 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n  margin: auto;\n  display: flex;\n  flex-direction: column;\n}\n\n.container .header {\n  width: 100%;\n  height: 70px;\n  padding: 15px;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  border-bottom: 1px solid #494848;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.container .header h1 {\n  font-size: 1.2rem;\n  color: rgb(61 61 61);\n}\n\n.container .header .clear {\n  width: 50px;\n  color: rgb(61, 61, 61);\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  cursor: pointer;\n  align-items: center;\n}\n\n.content {\n  height: 100%;\n  border-bottom-right-radius: 10px;\n  border-bottom-left-radius: 10px;\n  display: flex;\n  flex-direction: column;\n}\n\n.content::-webkit-scrollbar {\n  display: none;\n}\n\n.content .add-item {\n  height: 50px;\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid #808080;\n}\n\n.add-item #input {\n  width: 100%;\n  outline: none;\n  border: none;\n  color: rgb(61 61 61);\n  font-style: italic;\n  font-size: 1rem;\n  height: 35px;\n}\n\n#addBtn {\n  width: 50px;\n  height: 40px;\n  border: none;\n  background: none;\n  cursor: pointer;\n}\n\n.fa-arrow-left {\n  color: rgb(61, 61, 61);\n  font-size: 1.2rem;\n}\n\n#list {\n  width: 100%;\n  height: 280px;\n  display: flex;\n  flex-direction: column;\n}\n\n.list {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n  align-items: center;\n  max-height: 280px;\n  overflow-y: auto;\n}\n\n.todo{\n  display: flex;\n  width: 100%;\n  min-height: 35px;\n  padding: 0 15px;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid grey;\n}\n\n#checkbox{\n  margin-right: 10px;\n  width: 18px;\n  height: 18px;\n}\n\n#rmvButton{\n  border: none;\n}\n\n#listItemContainer #checkbox {\n  cursor: pointer;\n}\n\n#listItemContainer .editIcon,\n.removeIcon {\n  cursor: pointer;\n  font-size: 18px;\n  color: #494848;\n}\n\n#clearButton {\n  position: absolute;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  cursor: pointer;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  border: none;\n  color: rgb(61 61 61);\n  bottom: 0;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(8 69 236);\n  color: #fff;\n}\n\n#inputValue {\n  width: 88%;\n  display: flex;\n  justify-content: start;\n  align-items: center;\n  border: none;\n  outline: none;\n  position: relative;\n  padding: 0;\n  margin: 0;\n  font-size: 1.2rem;\n  color: rgb(7, 1, 85);\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n  margin: auto;\n  display: flex;\n  flex-direction: column;\n}\n\n.container .header {\n  width: 100%;\n  height: 70px;\n  padding: 15px;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  border-bottom: 1px solid #494848;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.container .header h1 {\n  font-size: 1.2rem;\n  color: rgb(61 61 61);\n}\n\n.container .header .clear {\n  width: 50px;\n  color: rgb(61, 61, 61);\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  cursor: pointer;\n  align-items: center;\n}\n\n.content {\n  height: 100%;\n  border-bottom-right-radius: 10px;\n  border-bottom-left-radius: 10px;\n  display: flex;\n  flex-direction: column;\n}\n\n.content::-webkit-scrollbar {\n  display: none;\n}\n\n.content .add-item {\n  height: 50px;\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid #808080;\n}\n\n.add-item #input {\n  width: 100%;\n  outline: none;\n  border: none;\n  color: rgb(61 61 61);\n  font-style: italic;\n  font-size: 1rem;\n  height: 35px;\n}\n\n#addBtn {\n  width: 50px;\n  height: 40px;\n  border: none;\n  background: none;\n  cursor: pointer;\n}\n\n.fa-arrow-left {\n  color: rgb(61, 61, 61);\n  font-size: 1.2rem;\n}\n\n#list {\n  width: 100%;\n  height: 280px;\n  display: flex;\n  flex-direction: column;\n}\n\n.list {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n  align-items: center;\n  max-height: 280px;\n  overflow-y: auto;\n}\n\n.todo{\n  display: flex;\n  width: 100%;\n  min-height: 35px;\n  padding: 0 15px;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid grey;\n}\n\n#checkbox{\n  margin-right: 10px;\n  width: 18px;\n  height: 18px;\n}\n\n.rmvButton{\n  border: none;\n  outline: none;\n}\n\n#listItemContainer #checkbox {\n  cursor: pointer;\n}\n\n#listItemContainer .editIcon,\n.removeIcon {\n  cursor: pointer;\n  font-size: 18px;\n  color: #494848;\n}\n\n#clearButton {\n  position: absolute;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  cursor: pointer;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  border: none;\n  color: rgb(61 61 61);\n  bottom: 0;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(8 69 236);\n  color: #fff;\n}\n\n#inputValue {\n  width: 88%;\n  display: flex;\n  justify-content: start;\n  align-items: center;\n  border: none;\n  outline: none;\n  position: relative;\n  padding: 0;\n  margin: 0;\n  font-size: 1.2rem;\n  color: rgb(7, 1, 85);\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5832,8 +5832,70 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "saveList": () => (/* binding */ saveList),
 /* harmony export */   "getAddTodos": () => (/* binding */ getAddTodos)
 /* harmony export */ });
+const container = document.querySelector('.container');
+
+const header = document.createElement('div');
+header.className = 'header';
+container.appendChild(header);
+
+const title = document.createElement('h1');
+title.innerText = "Today's To DO";
+header.appendChild(title);
+
+const clearBtn = document.createElement('div');
+clearBtn.className = 'clear';
+header.appendChild(clearBtn);
+
+const refresh = document.createElement('i');
+refresh.className = 'fa fa-refresh';
+clearBtn.appendChild(refresh);
+
+const content = document.createElement('div');
+content.className = 'content';
+container.appendChild(content);
+
+const form = document.createElement('form');
+form.className = 'add-item';
+form.id = 'form';
+content.appendChild(form);
+
+const input = document.createElement('input');
+input.id = 'input';
+input.type = 'text';
+input.placeholder = 'Add to your list...';
+form.appendChild(input);
+
+const button = document.createElement('button');
+button.id = 'addBtn';
+button.type = 'button';
+form.appendChild(button);
+
+const enterBtn = document.createElement('i');
+enterBtn.className = 'fa-solid fa-arrow-left';
+button.appendChild(enterBtn);
+
+const list = document.createElement('div');
+list.id = 'list';
+content.appendChild(list);
+
+const clearButton = document.createElement('button');
+clearButton.id = 'clearButton';
+clearButton.type = 'button';
+clearButton.innerText = 'Clear all completed';
+container.appendChild(clearButton);
+
 class TodoList {
   LIST = [];
+
+  addTodo(description) {
+    const todo = {
+      description,
+      completed: false,
+      index: this.LIST.length + 1,
+    };
+    this.LIST.push(todo);
+    this.saveToDo();
+  }
 
   saveToDo() {
     const todos = JSON.stringify(this.LIST);
@@ -5844,16 +5906,6 @@ class TodoList {
     this.LIST = JSON.parse(
       localStorage.getItem('todos'),
     );
-  }
-
-  addTodo(description) {
-    const todo = {
-      description,
-      completed: false,
-      index: this.LIST.length + 1,
-    };
-    this.LIST.push(todo);
-    this.saveToDo();
   }
 
   editItem(text, index) {
@@ -5921,29 +5973,8 @@ const createTodo = () => {
       list.appendChild(inputElement);
 
       inputElement.addEventListener('click', () => {
-        if (localStorage.getItem('todos', todo)) {
-          inputElement.contentEditable = true;
-        }
-      });
-
-      const buttonRmv = document.createElement('button');
-      buttonRmv.id = 'rmvButton';
-      buttonRmv.type = 'button';
-      list.appendChild(buttonRmv);
-
-      const removeIcon = document.createElement('i');
-      removeIcon.className = 'fa fa-trash-alt removeIcon';
-      removeIcon.id = map.index;
-      buttonRmv.appendChild(removeIcon);
-
-      buttonRmv.addEventListener('click', () => {
-        if (localStorage.getItem('todos', todo)) {
-          if (map.completed === true) {
-            list.remove();
-            localStorage.clear();
-            window.location.reload();
-          }
-        }
+        inputElement.contentEditable = true;
+        inputElement.style.color = 'blue';
       });
 
       inputElement.addEventListener('keyup', (e) => {
@@ -5953,7 +5984,24 @@ const createTodo = () => {
           } else {
             todo.editItem(e.target, map.index);
           }
+          localStorage.setItem('todos', todo);
         }
+      });
+
+      const buttonRmv = document.createElement('button');
+      buttonRmv.className = 'rmvButton';
+      buttonRmv.id = map.index;
+      buttonRmv.type = 'button';
+      list.appendChild(buttonRmv);
+
+      const removeIcon = document.createElement('i');
+      removeIcon.className = 'fa fa-trash-alt removeIcon';
+      buttonRmv.appendChild(removeIcon);
+
+      buttonRmv.addEventListener('click', () => {
+        localStorage.setItem('todos', map.index);
+        localStorage.removeItem(map.index);
+        window.location.reload();
       });
 
       taskContainer.append(list);
@@ -6067,58 +6115,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-const container = document.querySelector('.container');
-
-const header = document.createElement('div');
-header.className = 'header';
-container.appendChild(header);
-
-const title = document.createElement('h1');
-title.innerText = "Today's To DO";
-header.appendChild(title);
-
-const clearBtn = document.createElement('div');
-clearBtn.className = 'clear';
-header.appendChild(clearBtn);
-
-const refresh = document.createElement('i');
-refresh.className = 'fa fa-refresh';
-clearBtn.appendChild(refresh);
-
-const content = document.createElement('div');
-content.className = 'content';
-container.appendChild(content);
-
-const form = document.createElement('form');
-form.className = 'add-item';
-form.id = 'form';
-content.appendChild(form);
-
-const input = document.createElement('input');
-input.id = 'input';
-input.type = 'text';
-input.placeholder = 'Add to your list...';
-form.appendChild(input);
-
-const button = document.createElement('button');
-button.id = 'addBtn';
-button.type = 'button';
-form.appendChild(button);
-
-const enterBtn = document.createElement('i');
-enterBtn.className = 'fa-solid fa-arrow-left';
-button.appendChild(enterBtn);
-
-const list = document.createElement('div');
-list.id = 'list';
-content.appendChild(list);
-
-const clearButton = document.createElement('button');
-clearButton.id = 'clearButton';
-clearButton.type = 'button';
-clearButton.innerText = 'Clear all completed';
-container.appendChild(clearButton);
 
 (0,_todo_js__WEBPACK_IMPORTED_MODULE_2__.saveList)();
 (0,_todo_js__WEBPACK_IMPORTED_MODULE_2__.getAddTodos)();

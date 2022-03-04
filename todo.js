@@ -54,14 +54,8 @@ export default class TodoList {
   LIST = [];
 
   saveToDo() {
-    const todos = JSON.stringify(this.LIST);
-    localStorage.setItem('todos', todos);
-  }
-
-  getStoredTodos() {
-    this.LIST = JSON.parse(
-      localStorage.getItem('todos'),
-    );
+    const todo = JSON.stringify(this.LIST);
+    localStorage.setItem('todos', todo);
   }
 
   addTodo(description) {
@@ -72,6 +66,12 @@ export default class TodoList {
     };
     this.LIST.push(todo);
     this.saveToDo();
+  }
+
+  getStoredTodos() {
+    this.LIST = JSON.parse(
+      localStorage.getItem('todos'),
+    );
   }
 
   editItem(text, index) {
@@ -90,7 +90,6 @@ export default class TodoList {
       item.index = index + 1;
     });
     localStorage.setItem('todos', JSON.stringify(updatedArray));
-    window.location.reload();
   };
 
   updateIndex() {
@@ -140,26 +139,7 @@ export const createTodo = () => {
 
       inputElement.addEventListener('click', () => {
         inputElement.contentEditable = true;
-      });
-
-      const buttonRmv = document.createElement('button');
-      // buttonRmv.id = 'rmvButton';
-      buttonRmv.type = 'button';
-      buttonRmv.id = map.index;
-      list.appendChild(buttonRmv);
-
-      const removeIcon = document.createElement('i');
-      removeIcon.className = 'fa fa-trash-alt removeIcon';
-      buttonRmv.appendChild(removeIcon);
-
-      buttonRmv.addEventListener('click', () => {
-        for (let i = 0; i < list.length; list + 1) {
-          if (localStorage.getItem('todos', todo)) {
-            if (todo.completed === true) {
-              localStorage.removeItem('list');
-            }
-          }
-        }
+        inputElement.style.color = 'blue';
       });
 
       inputElement.addEventListener('keyup', (e) => {
@@ -170,6 +150,23 @@ export const createTodo = () => {
             todo.editItem(e.target, map.index);
           }
           localStorage.setItem('todos', todo);
+        }
+      });
+
+      const buttonRmv = document.createElement('button');
+      buttonRmv.className = 'rmvButton';
+
+      buttonRmv.id = map.index;
+      buttonRmv.type = 'button';
+      list.appendChild(buttonRmv);
+
+      const removeIcon = document.createElement('i');
+      removeIcon.className = 'fa fa-trash-alt removeIcon';
+      buttonRmv.appendChild(removeIcon);
+
+      buttonRmv.addEventListener('click', () => {
+        if (map.completed === true) {
+          list.remove();
         }
       });
 
