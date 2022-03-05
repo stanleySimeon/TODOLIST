@@ -1,201 +1,75 @@
-const container = document.querySelector('.container');
-
-const header = document.createElement('div');
-header.className = 'header';
-container.appendChild(header);
-
-const title = document.createElement('h1');
-title.innerText = "Today's To DO";
-header.appendChild(title);
-
-const clearBtn = document.createElement('div');
-clearBtn.className = 'clear';
-header.appendChild(clearBtn);
-
-const refresh = document.createElement('i');
-refresh.className = 'fa fa-refresh';
-clearBtn.appendChild(refresh);
-
-const content = document.createElement('div');
-content.className = 'content';
-container.appendChild(content);
-
-const form = document.createElement('form');
-form.className = 'add-item';
-form.id = 'form';
-content.appendChild(form);
-
-const input = document.createElement('input');
-input.id = 'input';
-input.type = 'text';
-input.placeholder = 'Add to your list...';
-form.appendChild(input);
-
-const button = document.createElement('button');
-button.id = 'addBtn';
-button.type = 'button';
-form.appendChild(button);
-
-const enterBtn = document.createElement('i');
-enterBtn.className = 'fa-solid fa-arrow-left';
-button.appendChild(enterBtn);
-
-const list = document.createElement('div');
-list.id = 'list';
-content.appendChild(list);
-
-const clearButton = document.createElement('button');
-clearButton.id = 'clearButton';
-clearButton.type = 'button';
-clearButton.innerText = 'Clear all completed';
-container.appendChild(clearButton);
-
-export default class TodoList {
-  LIST = [];
-
-  saveToDo() {
-    const todo = JSON.stringify(this.LIST);
-    localStorage.setItem('todos', todo);
+export default class TDlist {
+  constructor(completed = false, description = '', reload) {
+    this.completed = completed;
+    this.description = description;
+    this.list = localStorage.getItem('list') !== null
+      ? JSON.parse(localStorage.getItem('list'))
+      : '';
+    this.reload = reload;
   }
 
-  addTodo(description) {
-    const todo = {
-      description,
-      completed: false,
-      index: this.LIST.length + 1,
+  saveList(TSave = this.list) {
+    const storeList = JSON.stringify(TSave);
+    localStorage.setItem('list', storeList);
+  }
+
+  static displayList(TList) {
+    const iterate = ({ index, Tdescription }) => {
+      const lItem = `
+    <li index="${index}" class="lists">
+     <div class="checkbox" title="Check!">
+     <input type="checkbox" class="check">
+     </div>
+     <input type="text" class="description" id="${index}" value="${Tdescription}">
+     <div class="ellips">
+      <i class="fas fa-ellipsis-v"></i>
+     </div>
+     <label class="trash" for="${index}">
+      <i class="fas fa-trash-alt"></i>
+     </label>
+    </li>`;
+      const [ul] = document.getElementsByClassName('items');
+      ul.insertAdjacentHTML('beforeend', lItem);
     };
-    this.LIST.push(todo);
-    this.saveToDo();
-  }
-
-  getStoredTodos() {
-    this.LIST = JSON.parse(
-      localStorage.getItem('todos'),
-    );
-  }
-
-  editItem(text, index) {
-    this.LIST[index - 1].description = text.textContent;
-    this.saveToDo();
-  }
-
-  completedTodo(status, index) {
-    this.LIST[index - 1].completed = status;
-    this.saveToDo();
-  }
-
-  removeTodo = (index) => {
-    const updatedArray = this.LIST.filter((taskIndex) => taskIndex !== index);
-    updatedArray.forEach((item, index) => {
-      item.index = index + 1;
+    TList.forEach((element) => {
+      iterate(element);
     });
-    localStorage.setItem('todos', JSON.stringify(updatedArray));
-  };
+  }
 
-  updateIndex() {
-    this.LIST.map((a) => {
-      a.index = this.LIST.indexOf(a) + 1;
-      return a;
+  addTask() {
+    if (this.list === '' || this.list.length <= 0) {
+      this.list = [
+        {
+          index: 1,
+          Tcompleted: this.completed,
+          Tdescription: this.description,
+        },
+      ];
+      this.saveList();
+    } else {
+      const task = {
+        index: this.list.length + 1,
+        Tcompleted: this.completed,
+        Tdescription: this.description,
+      };
+      this.list.push(task);
+      this.saveList();
+    }
+  }
+
+  removeTask(taskId) {
+    const Remove = this.list.filter(({ index }) => index !== Number(taskId));
+    const update = Remove.map((item) => {
+      item.index = Remove.indexOf(item) + 1;
+      return item;
     });
+    this.saveList(update);
+    const task = document.getElementById(taskId).parentNode;
+    task.remove();
+  }
+
+  editTask(who, value) {
+    this.list[who].Tdescription = value;
+    this.saveList();
   }
 }
-
-const todo = new TodoList();
-
-const clear = document.querySelector('.clear');
-clear.addEventListener('click', () => {
-  window.location.reload();
-});
-
-export const createTodo = () => {
-  const itemList = document.querySelector('#list');
-  itemList.replaceChildren();
-
-  if (todo.LIST.length > 0) {
-    const taskContainer = document.createElement('ul');
-    taskContainer.className = 'list';
-    itemList.appendChild(taskContainer);
-    todo.LIST.map((map) => {
-      const list = document.createElement('li');
-      list.className = 'todo';
-      taskContainer.appendChild(list);
-
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
-      checkbox.id = 'checkbox';
-      list.appendChild(checkbox);
-      if (map.completed === true) {
-        checkbox.checked = 'checked';
-      }
-
-      checkbox.onclick = (e) => {
-        todo.completedTodo(e.target.checked, map.index);
-      };
-
-      const inputElement = document.createElement('p');
-      inputElement.id = 'inputValue';
-      inputElement.textContent = map.description;
-      list.appendChild(inputElement);
-
-      inputElement.addEventListener('click', () => {
-        inputElement.contentEditable = true;
-        inputElement.style.color = 'blue';
-      });
-
-      inputElement.addEventListener('keyup', (e) => {
-        if (e.target.id === 'inputValue') {
-          if (e.key === 'Enter') {
-            createTodo();
-          } else {
-            todo.editItem(e.target, map.index);
-          }
-          localStorage.setItem('todos', todo);
-        }
-      });
-
-      const buttonRmv = document.createElement('button');
-      buttonRmv.className = 'rmvButton';
-
-      buttonRmv.id = map.index;
-      buttonRmv.type = 'button';
-      list.appendChild(buttonRmv);
-
-      const removeIcon = document.createElement('i');
-      removeIcon.className = 'fa fa-trash-alt removeIcon';
-      buttonRmv.appendChild(removeIcon);
-
-      buttonRmv.addEventListener('click', () => {
-        if (map.completed === true) {
-          list.remove();
-        }
-      });
-
-      taskContainer.append(list);
-      return list;
-    });
-    itemList.appendChild(taskContainer);
-  }
-};
-
-const saveList = () => {
-  if (localStorage.getItem('todos')) {
-    todo.getStoredTodos();
-    createTodo();
-  }
-};
-
-export { saveList };
-
-const getAddTodos = () => {
-  const addToDO = document.getElementById('input');
-  const description = addToDO.value;
-  if (description !== '') {
-    todo.addTodo(description);
-    createTodo();
-    addToDO.value = '';
-  }
-};
-export { getAddTodos };
-
-const addBtn = document.getElementById('addBtn');
-addBtn.addEventListener('click', getAddTodos);

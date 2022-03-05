@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-- [Live Demo Link](https://mstanley-me.github.io/TODO/)
+- [Live Demo Link](https://stanleySimeon.github.io/TODO/)
 
 
 ## Getting Started
@@ -32,8 +32,8 @@ run `python -m http:server` or `npm install -g live-server` after run `live-serv
 
 👤 **Author**
 - Stanley SIMEON
-- GitHub: [https://github.com/mstanley-me]
-- LinkedIn: [https://www.linkedin.com/in/stanley-simeon-881091224/]
+- GitHub: [https://github.com/stanleySimeon]
+- LinkedIn: [https://www.linkedin.com/in/stanleySimeon-881091224/]
 
 ## 🤝 Contributing
 

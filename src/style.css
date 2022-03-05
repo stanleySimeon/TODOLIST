@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #545862;
 }
 
 body {
@@ -15,162 +17,145 @@ body {
   position: relative;
   width: 30%;
   height: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   border-radius: 10px;
   border: 1px solid rgb(6 20 214);
   box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
 }
 
-.container .header {
-  width: 100%;
-  height: 70px;
-  padding: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom: 1px solid #494848;
+.container .item_form .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.container .header h1 {
-  font-size: 1.2rem;
-  color: rgb(61 61 61);
-}
-
-.container .header .clear {
-  width: 50px;
-  color: rgb(61, 61, 61);
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  align-items: center;
-}
-
-.content {
-  height: 100%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.content::-webkit-scrollbar {
-  display: none;
-}
-
-.content .add-item {
-  height: 50px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #808080;
-}
-
-.add-item #input {
-  width: 100%;
-  outline: none;
-  border: none;
-  color: rgb(61 61 61);
-  font-style: italic;
-  font-size: 1rem;
-  height: 35px;
-}
-
-#addBtn {
-  width: 50px;
-  height: 40px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.fa-arrow-left {
-  color: rgb(61, 61, 61);
-  font-size: 1.2rem;
-}
-
-#list {
-  width: 100%;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-}
-
-.list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  max-height: 280px;
-  overflow-y: auto;
-}
-
-.todo {
-  display: flex;
-  width: 100%;
-  min-height: 35px;
+  border-radius: 9px 9px 0 0;
+  height: 60px;
   padding: 0 15px;
+  border-bottom: 1px solid #999898;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 1.3rem;
+}
+
+.header > i {
+  cursor: pointer;
+}
+
+.item_form .inputContainer {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
   border-bottom: 1px solid grey;
 }
 
-#checkbox {
-  margin-right: 10px;
-  width: 18px;
-  height: 18px;
+.inputContainer #sub_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
 }
 
-.rmvButton {
+#sub_form #new-item {
+  width: 86%;
+  font-size: 1.1rem;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+#sub_form .submit-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.submit-item #submit_item {
+  height: 20px;
+  width: 20px;
+  border-radius: 30%;
+  border: none;
+  background-color: rgb(155, 155, 155);
+  cursor: pointer;
+}
+
+.submit-item #submit_item:active {
+  background-color: rgba(146, 146, 146, 0.541);
+}
+
+.items {
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.items .lists {
+  width: 100% !important;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid grey;
+}
+
+.items .lists .description {
   border: none;
   outline: none;
+  width: 86%;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-#listItemContainer #checkbox {
+.checkbox > i {
+  color: rgb(61, 61, 61);
+  font-size: 1rem;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  border-radius: 4px;
   cursor: pointer;
 }
 
-#listItemContainer .editIcon,
-.removeIcon {
+.ellips {
+  cursor: move;
+}
+
+.trash {
+  position: absolute;
+  right: 10px;
   cursor: pointer;
-  font-size: 18px;
-  color: #494848;
+  visibility: hidden;
+  transition: 0.2s visibility;
 }
 
 #clearButton {
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 50px;
   font-size: 1.2rem;
-  cursor: pointer;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: #f6f6f6;
+  color: rgba(51, 51, 51, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
   border: none;
-  color: rgb(61 61 61);
-  bottom: 0;
+  cursor: pointer;
   user-select: none;
 }
 
 #clearButton:hover {
-  background-color: rgb(8 69 236);
-  color: #fff;
-}
-
-#inputValue {
-  width: 88%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  border: none;
-  outline: none;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  font-size: 1.2rem;
-  color: rgb(7, 1, 85);
+  background-color: rgb(3, 15, 117);
+  color: rgb(255, 255, 255);
 }
