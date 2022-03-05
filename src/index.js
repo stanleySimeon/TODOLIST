@@ -1,5 +1,5 @@
 import './style.css';
-import { checkbox as checkBox, clearAll } from '../change.js';
+import { checkbox as checkBox, clearAll } from '../checkAndClear.js';
 import TDlist from '../todo.js';
 
 if (localStorage.getItem('list') !== null) {
