@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n  margin: auto;\n  display: flex;\n  flex-direction: column;\n}\n\n.container .header {\n  width: 100%;\n  height: 70px;\n  padding: 15px;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  border-bottom: 1px solid #494848;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.container .header h1 {\n  font-size: 1.2rem;\n  color: rgb(61 61 61);\n}\n\n.container .header .clear {\n  width: 50px;\n  color: rgb(61, 61, 61);\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  cursor: pointer;\n  align-items: center;\n}\n\n.content {\n  height: 100%;\n  border-bottom-right-radius: 10px;\n  border-bottom-left-radius: 10px;\n  display: flex;\n  flex-direction: column;\n}\n\n.content::-webkit-scrollbar {\n  display: none;\n}\n\n.content .add-item {\n  height: 50px;\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid #808080;\n}\n\n.add-item #input {\n  width: 100%;\n  outline: none;\n  border: none;\n  color: rgb(61 61 61);\n  font-style: italic;\n  font-size: 1rem;\n  height: 35px;\n}\n\n#addBtn {\n  width: 50px;\n  height: 40px;\n  border: none;\n  background: none;\n  cursor: pointer;\n}\n\n.fa-arrow-left {\n  color: rgb(61, 61, 61);\n  font-size: 1.2rem;\n}\n\n#list {\n  width: 100%;\n  height: 280px;\n  display: flex;\n  flex-direction: column;\n}\n\n.list {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n  align-items: center;\n  max-height: 280px;\n  overflow-y: auto;\n}\n\n.todo {\n  display: flex;\n  width: 100%;\n  min-height: 35px;\n  padding: 0 15px;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid grey;\n}\n\n#checkbox {\n  margin-right: 10px;\n  width: 18px;\n  height: 18px;\n}\n\n.rmvButton {\n  border: none;\n  outline: none;\n}\n\n#listItemContainer #checkbox {\n  cursor: pointer;\n}\n\n#listItemContainer .editIcon,\n.removeIcon {\n  cursor: pointer;\n  font-size: 18px;\n  color: #494848;\n}\n\n#clearButton {\n  position: absolute;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  cursor: pointer;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  border: none;\n  color: rgb(61 61 61);\n  bottom: 0;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(8 69 236);\n  color: #fff;\n}\n\n#inputValue {\n  width: 88%;\n  display: flex;\n  justify-content: start;\n  align-items: center;\n  border: none;\n  outline: none;\n  position: relative;\n  padding: 0;\n  margin: 0;\n  font-size: 1.2rem;\n  color: rgb(7, 1, 85);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n  color: #545862;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n}\n\n.container .item_form .header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-radius: 9px 9px 0 0;\n  height: 60px;\n  padding: 0 15px;\n  border-bottom: 1px solid #999898;\n  position: relative;\n}\n\n.header h1 {\n  font-size: 1.3rem;\n}\n\n.header > i {\n  cursor: pointer;\n}\n\n.item_form .inputContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 50px;\n  border-bottom: 1px solid grey;\n}\n\n.inputContainer #sub_form {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 50px;\n  padding: 0 10px;\n}\n\n#sub_form #new-item {\n  width: 86%;\n  font-size: 1.1rem;\n  padding: 0;\n  outline: none;\n  border: none;\n}\n\n#sub_form .submit-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 40px;\n}\n\n.submit-item #submit_item {\n  height: 20px;\n  width: 20px;\n  border-radius: 30%;\n  border: none;\n  background-color: rgb(155, 155, 155);\n  cursor: pointer;\n}\n\n.submit-item #submit_item:active {\n  background-color: rgba(146, 146, 146, 0.541);\n}\n\n.items {\n  max-height: 290px;\n  overflow-y: auto;\n}\n\n.items .lists {\n  width: 100% !important;\n  padding: 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  outline: none;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  border-bottom: 1px solid grey;\n}\n\n.items .lists .description {\n  border: none;\n  outline: none;\n  width: 86%;\n  height: 30px;\n  font-size: 1rem;\n  font-weight: 500;\n}\n\n.checkbox > i {\n  color: rgb(61, 61, 61);\n  font-size: 1rem;\n  border: 1px solid rgba(51, 51, 51, 0.5);\n  border-radius: 4px;\n  cursor: pointer;\n}\n\n.ellips {\n  cursor: move;\n}\n\n.trash {\n  position: absolute;\n  right: 10px;\n  cursor: pointer;\n  visibility: hidden;\n  transition: 0.2s visibility;\n}\n\n#clearButton {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  background-color: #f6f6f6;\n  color: rgba(51, 51, 51, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 0 0 8px 8px;\n  border: none;\n  cursor: pointer;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(3, 15, 117);\n  color: rgb(255, 255, 255);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -472,6 +472,90 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 
+/***/ }),
+/* 11 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TDlist)
+/* harmony export */ });
+class TDlist {
+  constructor(completed = false, description = '', reload) {
+    this.completed = completed;
+    this.description = description;
+    this.list = localStorage.getItem('list') !== null
+      ? JSON.parse(localStorage.getItem('list'))
+      : '';
+    this.reload = reload;
+  }
+
+  saveList(TSave = this.list) {
+    const storeList = JSON.stringify(TSave);
+    localStorage.setItem('list', storeList);
+  }
+
+  static displayList(TList) {
+    const iterate = ({ index, Tdescription }) => {
+      const lItem = `
+    <li index="${index}" class="lists">
+     <div class="checkbox" title="Check!">
+     <input type="checkbox" class="check">
+     </div>
+     <input type="text" class="description" id="${index}" value="${Tdescription}">
+     <div class="ellips">
+      <i class="fas fa-ellipsis-v"></i>
+     </div>
+     <label class="trash" for="${index}">
+      <i class="fas fa-trash-alt"></i>
+     </label>
+    </li>`;
+      const [ul] = document.getElementsByClassName('items');
+      ul.insertAdjacentHTML('beforeend', lItem);
+    };
+    TList.forEach((element) => {
+      iterate(element);
+    });
+  }
+
+  addTask() {
+    if (this.list === '' || this.list.length <= 0) {
+      this.list = [
+        {
+          index: 1,
+          Tcompleted: this.completed,
+          Tdescription: this.description,
+        },
+      ];
+      this.saveList();
+    } else {
+      const task = {
+        index: this.list.length + 1,
+        Tcompleted: this.completed,
+        Tdescription: this.description,
+      };
+      this.list.push(task);
+      this.saveList();
+    }
+  }
+
+  removeTask(taskId) {
+    const Remove = this.list.filter(({ index }) => index !== Number(taskId));
+    const update = Remove.map((item) => {
+      item.index = Remove.indexOf(item) + 1;
+      return item;
+    });
+    this.saveList(update);
+    const task = document.getElementById(taskId).parentNode;
+    task.remove();
+  }
+
+  editTask(who, value) {
+    this.list[who].Tdescription = value;
+    this.saveList();
+  }
+}
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -546,53 +630,53 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/todo.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
 // eslint-disable-next-line import/extensions
 
 
 if (localStorage.getItem('list') !== null) {
-    const list = JSON.parse(localStorage.getItem('list'));
-    Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/todo.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(list);
+  const list = JSON.parse(localStorage.getItem('list'));
+  _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"].displayList(list);
 }
 
 const description = document.querySelectorAll('.description');
 
 const clear = document.querySelector('.fa-sync-alt');
 clear.addEventListener('click', () => {
-    window.location.reload();
+  window.location.reload();
 });
 
 const getFocus = (event) => {
-    const li = event.target.parentNode;
-    const ellips = event.target.nextElementSibling;
-    const trash = ellips.nextElementSibling;
-    li.style.backgroundColor = 'transparent';
-    ellips.style.visibility = 'hidden';
-    trash.style.visibility = 'visible';
+  const li = event.target.parentNode;
+  const ellips = event.target.nextElementSibling;
+  const trash = ellips.nextElementSibling;
+  li.style.backgroundColor = 'transparent';
+  ellips.style.visibility = 'hidden';
+  trash.style.visibility = 'visible';
 };
 
 const lostFocus = (event) => {
-    const li = event.target.parentNode;
-    const ellips = event.target.nextElementSibling;
-    const trash = ellips.nextElementSibling;
-    li.style.color = '#cc992d';
-    ellips.style.visibility = 'visible';
-    trash.style.visibility = 'hidden';
+  const li = event.target.parentNode;
+  const ellips = event.target.nextElementSibling;
+  const trash = ellips.nextElementSibling;
+  li.style.color = '#cc992d';
+  ellips.style.visibility = 'visible';
+  trash.style.visibility = 'hidden';
 };
 
 description.forEach((element) => {
-    element.addEventListener('focus', getFocus);
-    element.addEventListener('blur', lostFocus);
+  element.addEventListener('focus', getFocus);
+  element.addEventListener('blur', lostFocus);
 });
 
 //  Function edit task
 
 description.forEach((element) => {
-    element.addEventListener('change', (event) => {
-        const task = new Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/todo.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
-        task.editTask(Number(event.target.id) - 1, event.target.value);
-    });
+  element.addEventListener('change', (event) => {
+    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    task.editTask(Number(event.target.id) - 1, event.target.value);
+  });
 });
 
 // function add task
@@ -600,12 +684,12 @@ description.forEach((element) => {
 const form = document.getElementById('sub_form');
 const Nitem = document.getElementById('new-item');
 const submit = (event) => {
-    if (Nitem.value === '') {
-        event.preventDefault();
-    } else {
-        const task = new Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/todo.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(false, Nitem.value);
-        task.addTask();
-    }
+  if (Nitem.value === '') {
+    event.preventDefault();
+  } else {
+    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"](false, Nitem.value);
+    task.addTask();
+  }
 };
 form.addEventListener('submit', submit);
 
@@ -613,12 +697,12 @@ form.addEventListener('submit', submit);
 
 const trash = document.querySelectorAll('.trash');
 trash.forEach((element) => {
-    element.addEventListener('click', function (event) {
-        event.stopImmediatePropagation();
-        const index = this.parentNode.getAttribute('index');
-        const task = new Object(function webpackMissingModule() { var e = new Error("Cannot find module './modules/todo.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
-        task.removeTask(Number(index));
-    });
+  element.addEventListener('click', (event) => {
+    event.stopImmediatePropagation();
+    const index = undefined.parentNode.getAttribute('index');
+    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    task.removeTask(Number(index));
+  });
 });
 
 // Function clear all
@@ -631,12 +715,12 @@ container.appendChild(clearButton);
 
 const clearBtn = document.querySelector('#clearButton');
 function removeAllCompleted() {
-    const check = document.querySelector('.check');
+  const check = document.querySelector('.check');
 
-    if (check.type.checked === true) {
-        localStorage.clear();
-        window.location.reload();
-    }
+  if (check.type.checked === true) {
+    localStorage.clear();
+    window.location.reload();
+  }
 }
 clearBtn.addEventListener('click', removeAllCompleted);
 })();
