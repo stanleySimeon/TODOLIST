@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n  color: #545862;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n}\n\n.container .item_form .header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-radius: 9px 9px 0 0;\n  height: 60px;\n  padding: 0 15px;\n  border-bottom: 1px solid #999898;\n  position: relative;\n}\n\n.header h1 {\n  font-size: 1.3rem;\n}\n\n.header > i {\n  cursor: pointer;\n}\n\n.item_form .inputContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 50px;\n  border-bottom: 1px solid grey;\n}\n\n.inputContainer #sub_form {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 50px;\n  padding: 0 10px;\n}\n\n#sub_form #new-item {\n  width: 86%;\n  font-size: 1.1rem;\n  padding: 0;\n  outline: none;\n  border: none;\n}\n\n#sub_form .submit-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 40px;\n}\n\n.submit-item #submit_item {\n  height: 20px;\n  width: 20px;\n  border-radius: 30%;\n  border: none;\n  background-color: rgb(155, 155, 155);\n  cursor: pointer;\n}\n\n.submit-item #submit_item:active {\n  background-color: rgba(146, 146, 146, 0.541);\n}\n\n.items {\n  max-height: 290px;\n  overflow-y: auto;\n}\n\n.items .lists {\n  width: 100% !important;\n  padding: 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  outline: none;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  border-bottom: 1px solid grey;\n}\n\n.items .lists .description {\n  border: none;\n  outline: none;\n  width: 86%;\n  height: 30px;\n  font-size: 1rem;\n  font-weight: 500;\n}\n\n.checkbox > i {\n  color: rgb(61, 61, 61);\n  font-size: 1rem;\n  border: 1px solid rgba(51, 51, 51, 0.5);\n  border-radius: 4px;\n  cursor: pointer;\n}\n\n.ellips {\n  cursor: move;\n}\n\n.trash {\n  position: absolute;\n  right: 10px;\n  cursor: pointer;\n  visibility: hidden;\n  transition: 0.2s visibility;\n}\n\n#clearButton {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  background-color: #f6f6f6;\n  color: rgba(51, 51, 51, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 0 0 8px 8px;\n  border: none;\n  cursor: pointer;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(3, 15, 117);\n  color: rgb(255, 255, 255);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n  color: #545862;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n}\n\n.container .item_form .header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-radius: 9px 9px 0 0;\n  height: 60px;\n  padding: 0 15px;\n  border-bottom: 1px solid #999898;\n  position: relative;\n}\n\n.header h1 {\n  font-size: 1.3rem;\n}\n\n.header > i {\n  cursor: pointer;\n}\n\n.item_form .inputContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 50px;\n  border-bottom: 1px solid grey;\n}\n\n.inputContainer #sub_form {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 50px;\n  padding: 0 10px;\n}\n\n#sub_form #new-item {\n  width: 86%;\n  font-size: 1.1rem;\n  padding: 0;\n  outline: none;\n  border: none;\n}\n\n#sub_form .submit-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 40px;\n}\n\n.submit-item #submit_item {\n  height: 20px;\n  width: 20px;\n  border-radius: 30%;\n  border: none;\n  background-color: rgb(155, 155, 155);\n  cursor: pointer;\n}\n\n.submit-item #submit_item:active {\n  background-color: rgba(146, 146, 146, 0.541);\n}\n\n.items {\n  max-height: 290px;\n  overflow-y: auto;\n}\n\n.items .lists {\n  width: 100% !important;\n  padding: 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  outline: none;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  border-bottom: 1px solid grey;\n}\n\n.items .lists .description {\n  border: none;\n  outline: none;\n  width: 86%;\n  height: 30px;\n  font-size: 1rem;\n  font-weight: 500;\n}\n\n.checkbox > i {\n  /* color: rgb(61, 61, 61); */\n  font-size: 1rem;\n  border: 1px solid rgba(51, 51, 51, 0.5);\n  border-radius: 2px;\n  cursor: pointer;\n}\n\n.ellips {\n  cursor: move;\n}\n\n.trash {\n  position: absolute;\n  right: 10px;\n  cursor: pointer;\n  visibility: hidden;\n  transition: 0.2s visibility;\n}\n\n#clearButton {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  background-color: #f6f6f6;\n  color: rgba(51, 51, 51, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 0 0 8px 8px;\n  border: none;\n  cursor: pointer;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(3, 15, 117);\n  color: rgb(255, 255, 255);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -474,6 +474,52 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 /* 11 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "checkbox": () => (/* binding */ checkbox),
+/* harmony export */   "clearAll": () => (/* binding */ clearAll)
+/* harmony export */ });
+/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+
+
+function checkbox(item) {
+  const status = item.getAttribute('completed');
+  const task = new _todo_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  if (status === 'false') {
+    item.innerHTML = '<i style="color:blue; border: none" class="fas fa-check"></i>';
+    item.nextElementSibling.style.textDecoration = 'line-through';
+    const index = Number(item.parentNode.getAttribute('index'));
+    task.editTask(index - 1, true);
+    item.setAttribute('completed', 'true');
+  } else {
+    item.innerHTML = '<i class="fas fa-stop"></i>';
+    item.nextElementSibling.style.textDecoration = '';
+    const index = Number(item.parentNode.getAttribute('index'));
+    task.editTask(index - 1, false);
+    item.setAttribute('completed', 'false');
+  }
+}
+
+const clearAll = () => {
+  const checkb = document.querySelectorAll('.checkbox');
+  const task = new _todo_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  const RemoveAll = task.list.filter(({ Tcompleted }) => Tcompleted === false);
+  const Nwupdate = RemoveAll.map((item) => {
+    item.index = RemoveAll.indexOf(item) + 1;
+    return item;
+  });
+  task.saveList(Nwupdate);
+  checkb.forEach((element) => {
+    if (element.getAttribute('completed') === 'true') {
+      element.parentNode.remove();
+    }
+  });
+};
+
+/***/ }),
+/* 12 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -630,14 +676,15 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _change_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
-// eslint-disable-next-line import/extensions
+
 
 
 if (localStorage.getItem('list') !== null) {
   const list = JSON.parse(localStorage.getItem('list'));
-  _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"].displayList(list);
+  _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"].displayList(list);
 }
 
 const description = document.querySelectorAll('.description');
@@ -674,7 +721,7 @@ description.forEach((element) => {
 
 description.forEach((element) => {
   element.addEventListener('change', (event) => {
-    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
     task.editTask(Number(event.target.id) - 1, event.target.value);
   });
 });
@@ -687,7 +734,7 @@ const submit = (event) => {
   if (Nitem.value === '') {
     event.preventDefault();
   } else {
-    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"](false, Nitem.value);
+    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"](false, Nitem.value);
     task.addTask();
   }
 };
@@ -700,7 +747,7 @@ trash.forEach((element) => {
   element.addEventListener('click', function (event) {
     event.stopImmediatePropagation();
     const index = this.parentNode.getAttribute('index');
-    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
     task.removeTask(Number(index));
   });
 });
@@ -713,16 +760,17 @@ clearButton.type = 'button';
 clearButton.innerText = 'Clear all completed';
 container.appendChild(clearButton);
 
-const clearBtn = document.querySelector('#clearButton');
-function removeAllCompleted() {
-  const check = document.querySelector('.check');
+const checkbox = document.querySelectorAll('.checkbox');
 
-  if (check.type.checked === true) {
-    localStorage.clear();
-    window.location.reload();
-  }
-}
-clearBtn.addEventListener('click', removeAllCompleted);
+checkbox.forEach((element) => {
+  element.addEventListener('click', function () {
+    (0,_change_js__WEBPACK_IMPORTED_MODULE_1__.checkbox)(this);
+  });
+});
+
+const removeAllCompleted = document.getElementById('clearButton');
+removeAllCompleted.addEventListener('click', _change_js__WEBPACK_IMPORTED_MODULE_1__.clearAll);
+
 })();
 
 /******/ })()

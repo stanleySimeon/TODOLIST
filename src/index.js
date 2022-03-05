@@ -1,5 +1,5 @@
 import './style.css';
-// eslint-disable-next-line import/extensions
+import { checkbox as checkBox, clearAll } from '../change.js';
 import TDlist from '../todo.js';
 
 if (localStorage.getItem('list') !== null) {
@@ -80,13 +80,13 @@ clearButton.type = 'button';
 clearButton.innerText = 'Clear all completed';
 container.appendChild(clearButton);
 
-const clearBtn = document.querySelector('#clearButton');
-function removeAllCompleted() {
-  const check = document.querySelector('.check');
+const checkbox = document.querySelectorAll('.checkbox');
 
-  if (check.type.checked === true) {
-    localStorage.clear();
-    window.location.reload();
-  }
-}
-clearBtn.addEventListener('click', removeAllCompleted);
+checkbox.forEach((element) => {
+  element.addEventListener('click', function () {
+    checkBox(this);
+  });
+});
+
+const removeAllCompleted = document.getElementById('clearButton');
+removeAllCompleted.addEventListener('click', clearAll);
