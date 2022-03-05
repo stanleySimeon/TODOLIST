@@ -697,9 +697,9 @@ form.addEventListener('submit', submit);
 
 const trash = document.querySelectorAll('.trash');
 trash.forEach((element) => {
-  element.addEventListener('click', (event) => {
+  element.addEventListener('click', function (event) {
     event.stopImmediatePropagation();
-    const index = undefined.parentNode.getAttribute('index');
+    const index = this.parentNode.getAttribute('index');
     const task = new _todo_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
     task.removeTask(Number(index));
   });
