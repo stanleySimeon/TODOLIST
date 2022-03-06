@@ -69,7 +69,7 @@ export default class TDlist {
   }
 
   editTask(who, value) {
-    this.list[who].Tdescription = value;
+    this.list[who].Tcompleted = value === true;
     this.saveList();
   }
 }

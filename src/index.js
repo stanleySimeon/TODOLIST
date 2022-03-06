@@ -76,7 +76,7 @@ trash.forEach((element) => {
 const container = document.querySelector('.container');
 const clearButton = document.createElement('button');
 clearButton.id = 'clearButton';
-clearButton.type = 'button';
+clearButton.type = 'reset';
 clearButton.innerText = 'Clear all completed';
 container.appendChild(clearButton);
 
@@ -89,4 +89,14 @@ checkbox.forEach((element) => {
 });
 
 const removeAllCompleted = document.getElementById('clearButton');
-removeAllCompleted.addEventListener('click', clearAll);
+
+function removeItem() { // deletes item from localStorage
+  const key = document.getElementById('Tcompleted'); // gets key from user
+  localStorage.removeItem(key); // passes key to the removeItem method
+  console.log('remove items');
+}
+
+window.onload = function () {
+  removeAllCompleted.addEventListener('click', clearAll);
+  document.getElementById('clearButton').onclick = removeItem;
+};
