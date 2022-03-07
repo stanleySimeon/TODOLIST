@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n  color: #545862;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n}\n\n.container .item_form .header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-radius: 9px 9px 0 0;\n  height: 60px;\n  padding: 0 15px;\n  border-bottom: 1px solid #999898;\n  position: relative;\n}\n\n.header h1 {\n  font-size: 1.3rem;\n}\n\n.header > i {\n  cursor: pointer;\n}\n\n.item_form .inputContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 50px;\n  border-bottom: 1px solid grey;\n}\n\n.inputContainer #sub_form {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 50px;\n  padding: 0 10px;\n}\n\n#sub_form #new-item {\n  width: 86%;\n  font-size: 1.1rem;\n  padding: 0;\n  outline: none;\n  border: none;\n}\n\n#sub_form .submit-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 40px;\n}\n\n.submit-item #submit_item {\n  height: 20px;\n  width: 20px;\n  border-radius: 30%;\n  border: none;\n  background-color: rgb(155, 155, 155);\n  cursor: pointer;\n}\n\n.submit-item #submit_item:active {\n  background-color: rgba(146, 146, 146, 0.541);\n}\n\n.items {\n  max-height: 290px;\n  overflow-y: auto;\n}\n\n.items .lists {\n  width: 100% !important;\n  padding: 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  outline: none;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  border-bottom: 1px solid grey;\n}\n\n.items .lists .description {\n  border: none;\n  outline: none;\n  width: 86%;\n  height: 30px;\n  font-size: 1rem;\n  font-weight: 500;\n}\n\n.checkbox > i {\n  /* color: rgb(61, 61, 61); */\n  font-size: 1rem;\n  border: 1px solid rgba(51, 51, 51, 0.5);\n  border-radius: 2px;\n  cursor: pointer;\n}\n\n.ellips {\n  cursor: move;\n}\n\n.trash {\n  position: absolute;\n  right: 10px;\n  cursor: pointer;\n  visibility: hidden;\n  transition: 0.2s visibility;\n}\n\n#clearButton {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  background-color: #f6f6f6;\n  color: rgba(51, 51, 51, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 0 0 8px 8px;\n  border: none;\n  cursor: pointer;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(3, 15, 117);\n  color: rgb(255, 255, 255);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n  color: #545862;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n}\n\n.container .item_form .header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-radius: 9px 9px 0 0;\n  height: 60px;\n  padding: 0 15px;\n  border-bottom: 1px solid #999898;\n  position: relative;\n}\n\n.header h1 {\n  font-size: 1.3rem;\n}\n\n.header > i {\n  cursor: pointer;\n}\n\n.item_form .inputContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 50px;\n  border-bottom: 1px solid grey;\n}\n\n.inputContainer #sub_form {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 50px;\n  padding: 0 10px;\n}\n\n#sub_form #new-item {\n  width: 86%;\n  font-size: 1.1rem;\n  padding: 0;\n  outline: none;\n  border: none;\n}\n\n#sub_form .submit-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 40px;\n}\n\n.submit-item #submit_item {\n  height: 20px;\n  width: 20px;\n  border-radius: 30%;\n  border: none;\n  background-color: rgb(155, 155, 155);\n  cursor: pointer;\n}\n\n.submit-item #submit_item:active {\n  background-color: rgba(146, 146, 146, 0.541);\n}\n\n.items {\n  max-height: 290px;\n  overflow-y: auto;\n}\n\n.items .lists {\n  width: 100% !important;\n  padding: 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  outline: none;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  border-bottom: 1px solid grey;\n}\n\n.items .lists .description {\n  border: none;\n  outline: none;\n  width: 86%;\n  height: 30px;\n  font-size: 1rem;\n  font-weight: 500;\n}\n\n.checkbox > i {\n  font-size: 1rem;\n  border: 1px solid rgba(51, 51, 51, 0.5);\n  border-radius: 2px;\n  cursor: pointer;\n}\n\n.ellips {\n  cursor: move;\n}\n\n.trash {\n  position: absolute;\n  right: 10px;\n  cursor: pointer;\n  visibility: hidden;\n  transition: 0.2s visibility;\n}\n\n#clearButton {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  background-color: #f6f6f6;\n  color: rgba(51, 51, 51, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 0 0 8px 8px;\n  border: none;\n  cursor: pointer;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(3, 15, 117);\n  color: rgb(255, 255, 255);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -597,7 +597,7 @@ class TDlist {
   }
 
   editTask(who, value) {
-    this.list[who].Tdescription = value;
+    this.list[who].Tcompleted = value === true;
     this.saveList();
   }
 }
@@ -676,7 +676,7 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _change_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _checkAndClear_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
@@ -756,7 +756,7 @@ trash.forEach((element) => {
 const container = document.querySelector('.container');
 const clearButton = document.createElement('button');
 clearButton.id = 'clearButton';
-clearButton.type = 'button';
+clearButton.type = 'reset';
 clearButton.innerText = 'Clear all completed';
 container.appendChild(clearButton);
 
@@ -764,13 +764,20 @@ const checkbox = document.querySelectorAll('.checkbox');
 
 checkbox.forEach((element) => {
   element.addEventListener('click', function () {
-    (0,_change_js__WEBPACK_IMPORTED_MODULE_1__.checkbox)(this);
+    (0,_checkAndClear_js__WEBPACK_IMPORTED_MODULE_1__.checkbox)(this);
   });
 });
 
 const removeAllCompleted = document.getElementById('clearButton');
-removeAllCompleted.addEventListener('click', _change_js__WEBPACK_IMPORTED_MODULE_1__.clearAll);
+function removeItem() { // deletes item from localStorage
+  const key = document.getElementById('Tcompleted'); // gets key from user
+  localStorage.removeItem(key);
+}
 
+window.onload = function () {
+  removeAllCompleted.addEventListener('click', _checkAndClear_js__WEBPACK_IMPORTED_MODULE_1__.clearAll);
+  document.getElementById('clearButton').onclick = removeItem;
+};
 })();
 
 /******/ })()
