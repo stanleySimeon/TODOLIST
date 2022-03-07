@@ -89,11 +89,9 @@ checkbox.forEach((element) => {
 });
 
 const removeAllCompleted = document.getElementById('clearButton');
-
 function removeItem() { // deletes item from localStorage
   const key = document.getElementById('Tcompleted'); // gets key from user
-  localStorage.removeItem(key); // passes key to the removeItem method
-  console.log('remove items');
+  localStorage.removeItem(key);
 }
 
 window.onload = function () {
