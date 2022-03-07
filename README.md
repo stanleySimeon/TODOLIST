@@ -23,7 +23,7 @@ Additional description about the project and its features.
 
 # Install
 
-- After cloning run ` npm install`
+- After cloning run `npm install`
 
 # Usage
 
