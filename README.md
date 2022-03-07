@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-- [Live Demo Link](https://stanleySimeon.github.io/TODO/)
+<!-- - [Live Demo Link](https://stanleySimeon.github.io/TODO/) -->
 
 
 ## Getting Started
