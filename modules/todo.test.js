@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+// eslint-disable-next-line import/extensions
 const TDlist = require('./todo');
 const { clearAll } = require('./checkAndClear');
 
