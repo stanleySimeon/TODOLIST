@@ -1,11 +1,10 @@
-export default class TDlist {
-  constructor(completed = false, description = '', reload) {
+module.exports = class TDlist {
+  constructor(completed = false, description = '') {
     this.completed = completed;
     this.description = description;
     this.list = localStorage.getItem('list') !== null
       ? JSON.parse(localStorage.getItem('list'))
       : '';
-    this.reload = reload;
   }
 
   saveList(TSave = this.list) {
@@ -72,4 +71,4 @@ export default class TDlist {
     this.list[who].Tcompleted = value === true;
     this.saveList();
   }
-}
+};

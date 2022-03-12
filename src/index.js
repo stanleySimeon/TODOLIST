@@ -1,6 +1,6 @@
 import './style.css';
-import { checkbox as checkBox, clearAll } from '../checkAndClear.js';
-import TDlist from '../todo.js';
+import { checkbox as checkBox, clearAll } from '../modules/checkAndClear.js';
+import TDlist from '../modules/todo.js';
 
 if (localStorage.getItem('list') !== null) {
   const list = JSON.parse(localStorage.getItem('list'));
