@@ -1,6 +1,6 @@
-import TDlist from './todo.js';
+const TDlist = require('./todo');
 
-export function checkbox(item) {
+exports.checkbox = function checkbox(item) {
   const status = item.getAttribute('completed');
   const task = new TDlist();
   if (status === 'false') {
@@ -16,9 +16,9 @@ export function checkbox(item) {
     task.editTask(index - 1, false);
     item.setAttribute('completed', 'false');
   }
-}
+};
 
-export const clearAll = () => {
+exports.clearAll = () => {
   const checkb = document.querySelectorAll('.checkbox');
   const task = new TDlist();
   const RemoveAll = task.list.filter(({ Tcompleted }) => Tcompleted === false);
