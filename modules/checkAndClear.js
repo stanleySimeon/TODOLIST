@@ -1,4 +1,4 @@
-const TDlist = require('./todo');
+const TDlist = require('./todo.js');
 
 exports.checkbox = function checkbox(item) {
   const status = item.getAttribute('completed');

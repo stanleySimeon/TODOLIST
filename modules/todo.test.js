@@ -1,7 +1,5 @@
-/* eslint-disable import/extensions */
-// eslint-disable-next-line import/extensions
-const TDlist = require('./todo');
-const { clearAll } = require('./checkAndClear');
+const TDlist = require('./todo.js');
+const { clearAll } = require('./checkAndClear.js');
 
 global.localStorage = {
   getItem: jest.fn().mockReturnValue(null),
