@@ -8,7 +8,7 @@ Additional description about the project and its features.
 ## Built With
 
 - HTML / CSS
-- javaScript ES6
+- JavaScript ES6
 - Linters
 - Webpack
 
