@@ -24,7 +24,7 @@
   "author": "Stanley SIMEON",
   "license": "ISC",
   "bugs": {},
-  "homepage": "https://github.com/stanleySimeon/TODOLIST/dist/index.html",
+  "homepage": "/",
   "devDependencies": {
     "@hint/connector-local": "^3.2.24",
     "@hint/formatter-stylish": "^3.1.33",
