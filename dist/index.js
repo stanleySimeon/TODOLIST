@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_input_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
 
       
       
@@ -43,12 +43,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_input_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_input_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_input_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_input_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Poppins', Arial, Helvetica, sans-serif;\n  color: #545862;\n}\n\nbody {\n  height: 100vh;\n  font-family: Poppins, Arial, Helvetica, sans-serif;\n  display: flex;\n  align-items: center;\n}\n\n.container {\n  position: relative;\n  width: 30%;\n  height: 450px;\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  border-radius: 10px;\n  border: 1px solid rgb(6 20 214);\n  box-shadow: 2px 2px 20px 10px rgb(13 64 235 / 50%);\n}\n\n.container .item_form .header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-radius: 9px 9px 0 0;\n  height: 60px;\n  padding: 0 15px;\n  border-bottom: 1px solid #999898;\n  position: relative;\n}\n\n.header h1 {\n  font-size: 1.3rem;\n}\n\n.header > i {\n  cursor: pointer;\n}\n\n.item_form .inputContainer {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 50px;\n  border-bottom: 1px solid grey;\n}\n\n.inputContainer #sub_form {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 50px;\n  padding: 0 10px;\n}\n\n#sub_form #new-item {\n  width: 86%;\n  font-size: 1.1rem;\n  padding: 0;\n  outline: none;\n  border: none;\n}\n\n#sub_form .submit-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 40px;\n}\n\n.submit-item #submit_item {\n  height: 20px;\n  width: 20px;\n  border-radius: 30%;\n  border: none;\n  background-color: rgb(155, 155, 155);\n  cursor: pointer;\n}\n\n.submit-item #submit_item:active {\n  background-color: rgba(146, 146, 146, 0.541);\n}\n\n.items {\n  max-height: 290px;\n  overflow-y: auto;\n}\n\n.items .lists {\n  width: 100% !important;\n  padding: 0 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  outline: none;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  border-bottom: 1px solid grey;\n}\n\n.items .lists .description {\n  border: none;\n  outline: none;\n  width: 86%;\n  height: 30px;\n  font-size: 1rem;\n  font-weight: 500;\n}\n\n.checkbox > i {\n  font-size: 1rem;\n  border: 1px solid rgba(51, 51, 51, 0.5);\n  border-radius: 2px;\n  cursor: pointer;\n}\n\n.ellips {\n  cursor: move;\n}\n\n.trash {\n  position: absolute;\n  right: 10px;\n  cursor: pointer;\n  visibility: hidden;\n  transition: 0.2s visibility;\n}\n\n#clearButton {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n  height: 50px;\n  font-size: 1.2rem;\n  background-color: #f6f6f6;\n  color: rgba(51, 51, 51, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 0 0 8px 8px;\n  border: none;\n  cursor: pointer;\n  user-select: none;\n}\n\n#clearButton:hover {\n  background-color: rgb(3, 15, 117);\n  color: rgb(255, 255, 255);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*\n! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n5. Use the user's configured `sans` font-feature-settings by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n  font-feature-settings: normal; /* 5 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  text-decoration: underline;\n  -webkit-text-decoration: underline dotted currentColor;\n          text-decoration: underline dotted currentColor;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  font-weight: inherit; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/* Make elements with the HTML hidden attribute stay hidden by default */\n[hidden] {\n  display: none;\n}\n\n*, ::before, ::after {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgba(59, 130, 246, 0.5);\n  --tw-ring-offset-shadow: 0 0 rgba(0,0,0,0);\n  --tw-ring-shadow: 0 0 rgba(0,0,0,0);\n  --tw-shadow: 0 0 rgba(0,0,0,0);\n  --tw-shadow-colored: 0 0 rgba(0,0,0,0);\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n\n::backdrop {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgba(59, 130, 246, 0.5);\n  --tw-ring-offset-shadow: 0 0 rgba(0,0,0,0);\n  --tw-ring-shadow: 0 0 rgba(0,0,0,0);\n  --tw-shadow: 0 0 rgba(0,0,0,0);\n  --tw-shadow-colored: 0 0 rgba(0,0,0,0);\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -376,68 +376,55 @@ module.exports = function (i) {
   Author Tobias Koppers @sokra
 */
 module.exports = function (cssWithMappingToString) {
-  var list = []; // return the list of modules as css string
+  var list = [];
 
+  // return the list of modules as css string
   list.toString = function toString() {
     return this.map(function (item) {
       var content = "";
       var needLayer = typeof item[5] !== "undefined";
-
       if (item[4]) {
         content += "@supports (".concat(item[4], ") {");
       }
-
       if (item[2]) {
         content += "@media ".concat(item[2], " {");
       }
-
       if (needLayer) {
         content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
       }
-
       content += cssWithMappingToString(item);
-
       if (needLayer) {
         content += "}";
       }
-
       if (item[2]) {
         content += "}";
       }
-
       if (item[4]) {
         content += "}";
       }
-
       return content;
     }).join("");
-  }; // import a list of modules into the list
+  };
 
-
+  // import a list of modules into the list
   list.i = function i(modules, media, dedupe, supports, layer) {
     if (typeof modules === "string") {
       modules = [[null, modules, undefined]];
     }
-
     var alreadyImportedModules = {};
-
     if (dedupe) {
       for (var k = 0; k < this.length; k++) {
         var id = this[k][0];
-
         if (id != null) {
           alreadyImportedModules[id] = true;
         }
       }
     }
-
     for (var _k = 0; _k < modules.length; _k++) {
       var item = [].concat(modules[_k]);
-
       if (dedupe && alreadyImportedModules[item[0]]) {
         continue;
       }
-
       if (typeof layer !== "undefined") {
         if (typeof item[5] === "undefined") {
           item[5] = layer;
@@ -446,7 +433,6 @@ module.exports = function (cssWithMappingToString) {
           item[5] = layer;
         }
       }
-
       if (media) {
         if (!item[2]) {
           item[2] = media;
@@ -455,7 +441,6 @@ module.exports = function (cssWithMappingToString) {
           item[2] = media;
         }
       }
-
       if (supports) {
         if (!item[4]) {
           item[4] = "".concat(supports);
@@ -464,11 +449,9 @@ module.exports = function (cssWithMappingToString) {
           item[4] = supports;
         }
       }
-
       list.push(item);
     }
   };
-
   return list;
 };
 
@@ -478,129 +461,107 @@ module.exports = function (cssWithMappingToString) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "checkbox": () => (/* binding */ checkbox),
-/* harmony export */   "clearAll": () => (/* binding */ clearAll)
+/* harmony export */   "addTask": () => (/* binding */ addTask),
+/* harmony export */   "clearAllCompleted": () => (/* binding */ clearAllCompleted),
+/* harmony export */   "deleteTask": () => (/* binding */ deleteTask),
+/* harmony export */   "dragTask": () => (/* binding */ dragTask),
+/* harmony export */   "editTask": () => (/* binding */ editTask),
+/* harmony export */   "getTasks": () => (/* binding */ getTasks),
+/* harmony export */   "toDoList": () => (/* binding */ toDoList),
+/* harmony export */   "updateIndexes": () => (/* binding */ updateIndexes),
+/* harmony export */   "updateTask": () => (/* binding */ updateTask)
 /* harmony export */ });
-/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* Getting the toDoList from localStorage and parsing it into an array.
+If there is no toDoList in localStorage, it will create an empty array. */
 
+const toDoList = JSON.parse(localStorage.getItem('toDoList')) || [];
 
-function checkbox(item) {
-  const status = item.getAttribute('completed');
-  const task = new _todo_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
-  if (status === 'false') {
-    item.innerHTML = '<i style="color:blue; border: none" class="fas fa-check"></i>';
-    item.nextElementSibling.style.textDecoration = 'line-through';
-    const index = Number(item.parentNode.getAttribute('index'));
-    task.editTask(index - 1, true);
-    item.setAttribute('completed', 'true');
-  } else {
-    item.innerHTML = '<i class="fas fa-stop"></i>';
-    item.nextElementSibling.style.textDecoration = '';
-    const index = Number(item.parentNode.getAttribute('index'));
-    task.editTask(index - 1, false);
-    item.setAttribute('completed', 'false');
-  }
-}
-
-const clearAll = () => {
-  const checkb = document.querySelectorAll('.checkbox');
-  const task = new _todo_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
-  const RemoveAll = task.list.filter(({ Tcompleted }) => Tcompleted === false);
-  const Nwupdate = RemoveAll.map((item) => {
-    item.index = RemoveAll.indexOf(item) + 1;
-    return item;
-  });
-  task.saveList(Nwupdate);
-  checkb.forEach((element) => {
-    if (element.getAttribute('completed') === 'true') {
-      element.parentNode.remove();
-    }
-  });
+/**
+ * It takes a task, adds it to the toDoList array, and then saves the updated array to localStorage
+ * @param task - The task to be added to the toDoList array.
+ */
+const addTask = (task) => {
+  toDoList.push(task);
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
 };
 
-/***/ }),
-/* 12 */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/**
+ * It deletes the task at the given index from the toDoList array,
+ * and then saves the updated array to local storage
+ * @param index - The index of the task to be deleted.
+ */
+const deleteTask = (index) => {
+  toDoList.splice(index, 1);
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ TDlist)
-/* harmony export */ });
-class TDlist {
-  constructor(completed = false, description = '', reload) {
-    this.completed = completed;
-    this.description = description;
-    this.list = localStorage.getItem('list') !== null
-      ? JSON.parse(localStorage.getItem('list'))
-      : '';
-    this.reload = reload;
-  }
+/**
+ * It takes an index and a description, and then it updates the description
+ * of the task at that index
+ * @param index - The index of the task in the toDoList array.
+ * @param description - The new description of the task.
+ */
+const editTask = (index, description) => {
+  toDoList[index].description = description;
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  saveList(TSave = this.list) {
-    const storeList = JSON.stringify(TSave);
-    localStorage.setItem('list', storeList);
-  }
+/**
+ * It takes the task at the index of the drag and drops it at the new index
+ * @param index - The index of the task being dragged.
+ * @param newIndex - The new index of the task.
+ */
+const dragTask = (index, newIndex) => {
+  const task = toDoList[index];
+  toDoList.splice(index, 1);
+  toDoList.splice(newIndex, 0, task);
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  static displayList(TList) {
-    const iterate = ({ index, Tdescription }) => {
-      const lItem = `
-    <li index="${index}" class="lists">
-     <div class="checkbox" title="Check!">
-     <input type="checkbox" class="check">
-     </div>
-     <input type="text" class="description" id="${index}" value="${Tdescription}">
-     <div class="ellips">
-      <i class="fas fa-ellipsis-v"></i>
-     </div>
-     <label class="trash" for="${index}">
-      <i class="fas fa-trash-alt"></i>
-     </label>
-    </li>`;
-      const [ul] = document.getElementsByClassName('items');
-      ul.insertAdjacentHTML('beforeend', lItem);
-    };
-    TList.forEach((element) => {
-      iterate(element);
-    });
-  }
+/**
+ * It takes an index and a completed value, and updates
+ * the toDoList array at that index with the new completed value
+ * @param index - The index of the task in the toDoList array.
+ * @param completed - a boolean value that indicates whether the task is completed or not.
+ */
+const updateTask = (index, completed) => {
+  toDoList[index].completed = completed;
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  addTask() {
-    if (this.list === '' || this.list.length <= 0) {
-      this.list = [
-        {
-          index: 1,
-          Tcompleted: this.completed,
-          Tdescription: this.description,
-        },
-      ];
-      this.saveList();
-    } else {
-      const task = {
-        index: this.list.length + 1,
-        Tcompleted: this.completed,
-        Tdescription: this.description,
-      };
-      this.list.push(task);
-      this.saveList();
-    }
-  }
+/**
+ * It loops through the toDoList array, and updates the index
+ * property of each task object to match its index in the array
+ */
+const updateIndexes = () => {
+  toDoList.forEach((task, index) => {
+    task.index = index;
+  });
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  removeTask(taskId) {
-    const Remove = this.list.filter(({ index }) => index !== Number(taskId));
-    const update = Remove.map((item) => {
-      item.index = Remove.indexOf(item) + 1;
-      return item;
-    });
-    this.saveList(update);
-    const task = document.getElementById(taskId).parentNode;
-    task.remove();
-  }
+/**
+ * It filters the toDoList array to only include tasks that have been completed,
+ * then it removes each of those tasks from the
+ * toDoList array
+ */
+const clearAllCompleted = () => {
+  const completedTasks = toDoList.filter((task) => task.completed);
+  completedTasks.forEach((task) => {
+    const index = toDoList.indexOf(task);
+    toDoList.splice(index, 1);
+  });
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  editTask(who, value) {
-    this.list[who].Tcompleted = value === true;
-    this.saveList();
-  }
-}
+/**
+ * GetTasks() returns the toDoList array.
+ */
+const getTasks = () => toDoList;
+
+/* Exporting the functions from the file. */
+
+
 
 /***/ })
 /******/ 	]);
@@ -670,114 +631,134 @@ class TDlist {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _checkAndClear_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _todo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _input_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _modules_todo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
 
 
+const input = document.querySelector('.input');
+const addButton = document.querySelector('.input-btn');
+const reload = document.getElementById('reload-btn');
+const clearAll = document.getElementById('clear-all-completed-btn');
 
-if (localStorage.getItem('list') !== null) {
-  const list = JSON.parse(localStorage.getItem('list'));
-  _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"].displayList(list);
-}
-
-const description = document.querySelectorAll('.description');
-
-const clear = document.querySelector('.fa-sync-alt');
-clear.addEventListener('click', () => {
+reload.addEventListener('click', () => {
   window.location.reload();
 });
 
-const getFocus = (event) => {
-  const li = event.target.parentNode;
-  const ellips = event.target.nextElementSibling;
-  const trash = ellips.nextElementSibling;
-  li.style.backgroundColor = 'transparent';
-  ellips.style.visibility = 'hidden';
-  trash.style.visibility = 'visible';
-};
-
-const lostFocus = (event) => {
-  const li = event.target.parentNode;
-  const ellips = event.target.nextElementSibling;
-  const trash = ellips.nextElementSibling;
-  li.style.color = '#cc992d';
-  ellips.style.visibility = 'visible';
-  trash.style.visibility = 'hidden';
-};
-
-description.forEach((element) => {
-  element.addEventListener('focus', getFocus);
-  element.addEventListener('blur', lostFocus);
-});
-
-//  Function edit task
-
-description.forEach((element) => {
-  element.addEventListener('change', (event) => {
-    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
-    task.editTask(Number(event.target.id) - 1, event.target.value);
-  });
-});
-
-// function add task
-
-const form = document.getElementById('sub_form');
-const Nitem = document.getElementById('new-item');
-const submit = (event) => {
-  if (Nitem.value === '') {
-    event.preventDefault();
-  } else {
-    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"](false, Nitem.value);
-    task.addTask();
+addButton.addEventListener('click', () => {
+  window.location.reload();
+  if (input.value === '') {
+    return;
   }
-};
-form.addEventListener('submit', submit);
-
-// function remove task
-
-const trash = document.querySelectorAll('.trash');
-trash.forEach((element) => {
-  element.addEventListener('click', function (event) {
-    event.stopImmediatePropagation();
-    const index = this.parentNode.getAttribute('index');
-    const task = new _todo_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
-    task.removeTask(Number(index));
+  (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.addTask)({
+    description: input.value,
+    completed: false,
+    index: 0,
   });
 });
 
-// Function clear all
-const container = document.querySelector('.container');
-const clearButton = document.createElement('button');
-clearButton.id = 'clearButton';
-clearButton.type = 'reset';
-clearButton.innerText = 'Clear all completed';
-container.appendChild(clearButton);
+(0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.getTasks)().forEach((task) => {
+  const li = document.createElement('li');
+  li.style.display = 'flex';
+  li.classList.add('item');
+  li.style.justifyContent = 'space-between';
+  li.style.padding = '10px 8px';
+  li.style.borderBottom = '1px solid #ccc';
+  li.innerHTML = `
+    <span class="w-11/12 flex items-center space-x-2">
+      <input type="checkbox" class="checkbox w-5 h-5" ${task.completed ? 'checked' : ''}>
+      <p class="description">${task.description}</p>
+    </span>
+    <span class="w-1/12 flex justify-center items-center">
+      <button class="delete-btn w-5 hidden"><img src="/src/asset/delete.png" alt="delete"></button>
+      <button class="drag-btn edit-btn w-5"><img src="/src/asset/dot-vertical-filled.svg" alt="delete"></button>
+    </span>
 
-const checkbox = document.querySelectorAll('.checkbox');
+  `;
+  document.querySelector('.input-list').appendChild(li);
+});
 
-checkbox.forEach((element) => {
-  element.addEventListener('click', function () {
-    (0,_checkAndClear_js__WEBPACK_IMPORTED_MODULE_1__.checkbox)(this);
+const checkboxes = document.querySelectorAll('.checkbox');
+
+checkboxes.forEach((checkbox, index) => {
+  checkbox.addEventListener('change', () => {
+    (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.updateTask)(index, checkbox.checked);
+    if (checkbox.checked) {
+      checkbox.nextElementSibling.classList.add('line-through');
+    } else {
+      checkbox.nextElementSibling.classList.remove('line-through');
+    }
+  });
+  checkbox.addEventListener('click', () => {
+    (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.updateIndexes)();
   });
 });
 
-const removeAllCompleted = document.getElementById('clearButton');
-function removeItem() { // deletes item from localStorage
-  const key = document.getElementById('Tcompleted'); // gets key from user
-  localStorage.removeItem(key);
-}
+const editButtons = document.querySelectorAll('.edit-btn');
 
-window.onload = function () {
-  removeAllCompleted.addEventListener('click', _checkAndClear_js__WEBPACK_IMPORTED_MODULE_1__.clearAll);
-  document.getElementById('clearButton').onclick = removeItem;
-};
+editButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const description = document.querySelectorAll('.description')[index];
+    const input = document.createElement('input');
+    input.style.width = '100%';
+    input.style.outline = 'none';
+    input.value = description.textContent;
+    input.classList.add('edit-input');
+
+    description.replaceWith(input);
+
+    const deleteButton = document.querySelectorAll('.delete-btn')[index];
+    deleteButton.classList.remove('hidden');
+
+    const editButton = document.querySelectorAll('.edit-btn')[index];
+    editButton.classList.add('hidden');
+
+    input.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.editTask)(index, input.value);
+      }
+    });
+
+    input.addEventListener('blur', () => {
+      (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.editTask)(index, input.value);
+      window.location.reload();
+    });
+
+    deleteButton.addEventListener('click', () => {
+      const item = document.querySelectorAll('.item')[index];
+      item.parentNode.removeChild(item);
+      (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.deleteTask)(index);
+    });
+  });
+});
+
+const dragButtons = document.querySelectorAll('.drag-btn');
+
+dragButtons.forEach((button, index) => {
+  button.addEventListener('dragstart', () => {
+    (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.dragTask)(index);
+  });
+
+  button.addEventListener('dragend', () => {
+    window.location.reload();
+  });
+});
+
+clearAll.addEventListener('click', () => {
+  (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.clearAllCompleted)();
+  window.location.reload();
+});
+
 })();
 
 /******/ })()

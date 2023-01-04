@@ -1,100 +1,117 @@
-import './style.css';
-import { checkbox as checkBox, clearAll } from '../modules/checkAndClear.js';
-import TDlist from '../modules/todo.js';
+import './input.css';
+import {
+  addTask, deleteTask, getTasks, dragTask, updateTask, updateIndexes, editTask, clearAllCompleted,
+} from '../modules/todo.js';
 
-if (localStorage.getItem('list') !== null) {
-  const list = JSON.parse(localStorage.getItem('list'));
-  TDlist.displayList(list);
-}
+const input = document.querySelector('.input');
+const addButton = document.querySelector('.input-btn');
+const reload = document.getElementById('reload-btn');
+const clearAll = document.getElementById('clear-all-completed-btn');
 
-const description = document.querySelectorAll('.description');
-
-const clear = document.querySelector('.fa-sync-alt');
-clear.addEventListener('click', () => {
+reload.addEventListener('click', () => {
   window.location.reload();
 });
 
-const getFocus = (event) => {
-  const li = event.target.parentNode;
-  const ellips = event.target.nextElementSibling;
-  const trash = ellips.nextElementSibling;
-  li.style.backgroundColor = 'transparent';
-  ellips.style.visibility = 'hidden';
-  trash.style.visibility = 'visible';
-};
-
-const lostFocus = (event) => {
-  const li = event.target.parentNode;
-  const ellips = event.target.nextElementSibling;
-  const trash = ellips.nextElementSibling;
-  li.style.color = '#cc992d';
-  ellips.style.visibility = 'visible';
-  trash.style.visibility = 'hidden';
-};
-
-description.forEach((element) => {
-  element.addEventListener('focus', getFocus);
-  element.addEventListener('blur', lostFocus);
-});
-
-//  Function edit task
-
-description.forEach((element) => {
-  element.addEventListener('change', (event) => {
-    const task = new TDlist();
-    task.editTask(Number(event.target.id) - 1, event.target.value);
-  });
-});
-
-// function add task
-
-const form = document.getElementById('sub_form');
-const Nitem = document.getElementById('new-item');
-const submit = (event) => {
-  if (Nitem.value === '') {
-    event.preventDefault();
-  } else {
-    const task = new TDlist(false, Nitem.value);
-    task.addTask();
+addButton.addEventListener('click', () => {
+  window.location.reload();
+  if (input.value === '') {
+    return;
   }
-};
-form.addEventListener('submit', submit);
-
-// function remove task
-
-const trash = document.querySelectorAll('.trash');
-trash.forEach((element) => {
-  element.addEventListener('click', function (event) {
-    event.stopImmediatePropagation();
-    const index = this.parentNode.getAttribute('index');
-    const task = new TDlist();
-    task.removeTask(Number(index));
+  addTask({
+    description: input.value,
+    completed: false,
+    index: 0,
   });
 });
 
-// Function clear all
-const container = document.querySelector('.container');
-const clearButton = document.createElement('button');
-clearButton.id = 'clearButton';
-clearButton.type = 'reset';
-clearButton.innerText = 'Clear all completed';
-container.appendChild(clearButton);
+getTasks().forEach((task) => {
+  const li = document.createElement('li');
+  li.style.display = 'flex';
+  li.classList.add('item');
+  li.style.justifyContent = 'space-between';
+  li.style.padding = '10px 8px';
+  li.style.borderBottom = '1px solid #ccc';
+  li.innerHTML = `
+    <span class="w-11/12 flex items-center space-x-2">
+      <input type="checkbox" class="checkbox w-5 h-5" ${task.completed ? 'checked' : ''}>
+      <p class="description">${task.description}</p>
+    </span>
+    <span class="w-1/12 flex justify-center items-center">
+      <button class="delete-btn w-5 hidden"><img src="/src/asset/delete.png" alt="delete"></button>
+      <button class="drag-btn edit-btn w-5"><img src="/src/asset/dot-vertical-filled.svg" alt="delete"></button>
+    </span>
 
-const checkbox = document.querySelectorAll('.checkbox');
+  `;
+  document.querySelector('.input-list').appendChild(li);
+});
 
-checkbox.forEach((element) => {
-  element.addEventListener('click', function () {
-    checkBox(this);
+const checkboxes = document.querySelectorAll('.checkbox');
+
+checkboxes.forEach((checkbox, index) => {
+  checkbox.addEventListener('change', () => {
+    updateTask(index, checkbox.checked);
+    if (checkbox.checked) {
+      checkbox.nextElementSibling.classList.add('line-through');
+    } else {
+      checkbox.nextElementSibling.classList.remove('line-through');
+    }
+  });
+  checkbox.addEventListener('click', () => {
+    updateIndexes();
   });
 });
 
-const removeAllCompleted = document.getElementById('clearButton');
-function removeItem() { // deletes item from localStorage
-  const key = document.getElementById('Tcompleted'); // gets key from user
-  localStorage.removeItem(key);
-}
+const editButtons = document.querySelectorAll('.edit-btn');
 
-window.onload = function () {
-  removeAllCompleted.addEventListener('click', clearAll);
-  document.getElementById('clearButton').onclick = removeItem;
-};
+editButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const description = document.querySelectorAll('.description')[index];
+    const input = document.createElement('input');
+    input.style.width = '100%';
+    input.style.outline = 'none';
+    input.value = description.textContent;
+    input.classList.add('edit-input');
+
+    description.replaceWith(input);
+
+    const deleteButton = document.querySelectorAll('.delete-btn')[index];
+    deleteButton.classList.remove('hidden');
+
+    const editButton = document.querySelectorAll('.edit-btn')[index];
+    editButton.classList.add('hidden');
+
+    input.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        editTask(index, input.value);
+      }
+    });
+
+    input.addEventListener('blur', () => {
+      editTask(index, input.value);
+      window.location.reload();
+    });
+
+    deleteButton.addEventListener('click', () => {
+      const item = document.querySelectorAll('.item')[index];
+      item.parentNode.removeChild(item);
+      deleteTask(index);
+    });
+  });
+});
+
+const dragButtons = document.querySelectorAll('.drag-btn');
+
+dragButtons.forEach((button, index) => {
+  button.addEventListener('dragstart', () => {
+    dragTask(index);
+  });
+
+  button.addEventListener('dragend', () => {
+    window.location.reload();
+  });
+});
+
+clearAll.addEventListener('click', () => {
+  clearAllCompleted();
+  window.location.reload();
+});

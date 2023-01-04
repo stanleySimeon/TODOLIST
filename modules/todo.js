@@ -1,74 +1,100 @@
-module.exports = class TDlist {
-  constructor(completed = false, description = '') {
-    this.completed = completed;
-    this.description = description;
-    this.list = localStorage.getItem('list') !== null
-      ? JSON.parse(localStorage.getItem('list'))
-      : '';
-  }
+/* Getting the toDoList from localStorage and parsing it into an array.
+If there is no toDoList in localStorage, it will create an empty array. */
 
-  saveList(TSave = this.list) {
-    const storeList = JSON.stringify(TSave);
-    localStorage.setItem('list', storeList);
-  }
+const toDoList = JSON.parse(localStorage.getItem('toDoList')) || [];
 
-  static displayList(TList) {
-    const iterate = ({ index, Tdescription }) => {
-      const lItem = `
-    <li index="${index}" class="lists">
-     <div class="checkbox" title="Check!">
-     <input type="checkbox" class="check">
-     </div>
-     <input type="text" class="description" id="${index}" value="${Tdescription}">
-     <div class="ellips">
-      <i class="fas fa-ellipsis-v"></i>
-     </div>
-     <label class="trash" for="${index}">
-      <i class="fas fa-trash-alt"></i>
-     </label>
-    </li>`;
-      const [ul] = document.getElementsByClassName('items');
-      ul.insertAdjacentHTML('beforeend', lItem);
-    };
-    TList.forEach((element) => {
-      iterate(element);
-    });
-  }
+/**
+ * It takes a task, adds it to the toDoList array, and then saves the updated array to localStorage
+ * @param task - The task to be added to the toDoList array.
+ */
+const addTask = (task) => {
+  toDoList.push(task);
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  addTask() {
-    if (this.list === '' || this.list.length <= 0) {
-      this.list = [
-        {
-          index: 1,
-          Tcompleted: this.completed,
-          Tdescription: this.description,
-        },
-      ];
-      this.saveList();
-    } else {
-      const task = {
-        index: this.list.length + 1,
-        Tcompleted: this.completed,
-        Tdescription: this.description,
-      };
-      this.list.push(task);
-      this.saveList();
-    }
-  }
+/**
+ * It deletes the task at the given index from the toDoList array,
+ * and then saves the updated array to local storage
+ * @param index - The index of the task to be deleted.
+ */
+const deleteTask = (index) => {
+  toDoList.splice(index, 1);
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  removeTask(taskId) {
-    const Remove = this.list.filter(({ index }) => index !== Number(taskId));
-    const update = Remove.map((item) => {
-      item.index = Remove.indexOf(item) + 1;
-      return item;
-    });
-    this.saveList(update);
-    const task = document.getElementById(taskId).parentNode;
-    task.remove();
-  }
+/**
+ * It takes an index and a description, and then it updates the description
+ * of the task at that index
+ * @param index - The index of the task in the toDoList array.
+ * @param description - The new description of the task.
+ */
+const editTask = (index, description) => {
+  toDoList[index].description = description;
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
 
-  editTask(who, value) {
-    this.list[who].Tcompleted = value === true;
-    this.saveList();
-  }
+/**
+ * It takes the task at the index of the drag and drops it at the new index
+ * @param index - The index of the task being dragged.
+ * @param newIndex - The new index of the task.
+ */
+const dragTask = (index, newIndex) => {
+  const task = toDoList[index];
+  toDoList.splice(index, 1);
+  toDoList.splice(newIndex, 0, task);
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
+
+/**
+ * It takes an index and a completed value, and updates
+ * the toDoList array at that index with the new completed value
+ * @param index - The index of the task in the toDoList array.
+ * @param completed - a boolean value that indicates whether the task is completed or not.
+ */
+const updateTask = (index, completed) => {
+  toDoList[index].completed = completed;
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
+
+/**
+ * It loops through the toDoList array, and updates the index
+ * property of each task object to match its index in the array
+ */
+const updateIndexes = () => {
+  toDoList.forEach((task, index) => {
+    task.index = index;
+  });
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
+
+/**
+ * It filters the toDoList array to only include tasks that have been completed,
+ * then it removes each of those tasks from the
+ * toDoList array
+ */
+const clearAllCompleted = () => {
+  const completedTasks = toDoList.filter((task) => task.completed);
+  completedTasks.forEach((task) => {
+    const index = toDoList.indexOf(task);
+    toDoList.splice(index, 1);
+  });
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
+};
+
+/**
+ * GetTasks() returns the toDoList array.
+ */
+const getTasks = () => toDoList;
+
+/* Exporting the functions from the file. */
+export {
+  addTask,
+  deleteTask,
+  editTask,
+  dragTask,
+  updateTask,
+  updateIndexes,
+  getTasks,
+  clearAllCompleted,
+  toDoList,
 };

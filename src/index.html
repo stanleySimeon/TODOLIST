@@ -2,31 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/84967187a9.js" crossorigin="anonymous"></script>
-    <title>TO DO LIST</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/84967187a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>TO DO LIST</title>
 </head>
 
 <body>
-    <div class="container">
-        <ul class="item_form">
-            <li class="header">
-                <h1>Today's Todo</h1>
-                <i class="fas fa-sync-alt"></i>
-            </li>
-            <li class="inputContainer">
-                <form id="sub_form">
-                    <input type="text" id="new-item" placeholder="Add to your list...">
-                    <div class="submit-item">
-                        <button id="submit_item" type="submit"><i class="fa fa-arrow-left"></i></button>
-                    </div>
-                </form>
-            </li>
-        </ul>
-        <ul class="items">
-        </ul>
+  <div class="container-fluid  flex justify-center items-center pt-32">
+    <div class="w-1/3 h-96 relative flex flex-col border-1 border-[#ccc] background-white shadow-md rounded-lg">
+      <div class="container">
+        <div class="flex justify-between items-center border-b border-[#ccc] text-gray-500 py-4 px-4">
+          <h1 class="font-bold">Today's Todo</h1>
+          <button type="button" id="reload-btn" class="cursor-pointer hover:animate-spin"><img src="/src/asset/iconmonstr-refresh-7.svg" alt="reload"></button>
+        </div>
+        <form id="formControl" class="flex justify-between items-center px-4 py-3 border-b border-[#ccc]">
+          <input type="text" autofocus required id="new_item" class="input w-full border-none outline-none" placeholder="Add to your list...">
+          <button id="add-btn" type="submit" class="input-btn w-6 cursor-pointer"><img src="/src/asset/left-arrow.png" alt="enter button"></button>
+        </form>
+      </div>
+      <ul class="input-list w-full items flex flex-col mt-4 overflow-y-auto mb-14">
+      </ul>
+      <button type="button" id="clear-all-completed-btn" class="w-full absolute bottom-0 border-t border-[#ccc] bg-[#878787] text-gray-500 hover:text-gray-700 py-4">Clear all completed</button>
     </div>
+  </div>
 </body>
-
 </html>
