@@ -24,9 +24,7 @@
   "keywords": [],
   "author": "Stanley SIMEON",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stanleySimeon/TODO/issues"
-  },
+  "bugs": {},
   "homepage": "https://github.com/stanleySimeon/TODO#readme",
   "devDependencies": {
     "@hint/connector-local": "^3.2.24",
