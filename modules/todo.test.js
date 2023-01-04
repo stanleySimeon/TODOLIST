@@ -1,4 +1,4 @@
-import { addTask, deleteTask } from '../modules/todo.js';
+import { addTask, deleteTask } from './todo.js';
 
 // Test addTask function
 test('should add a task to the todoList array', () => {
