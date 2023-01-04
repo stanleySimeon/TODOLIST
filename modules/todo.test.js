@@ -1,19 +1,27 @@
-const TDlist = require('./todo.js');
-const { clearAll } = require('./checkAndClear.js');
+import { addTask, deleteTask } from './todo.js';
 
-global.localStorage = {
-  getItem: jest.fn().mockReturnValue(null),
-  setItem: jest.fn().mockReturnValue(null),
-};
-describe('Edit checking...', () => {
-  it('The item should be edited', () => {
-    const task = new TDlist();
-    task.addTask();
-    task.editTask(0, false);
-    expect(task.list.length).toBe(1);
-    expect(task.list[0].Tcompleted).toBe(false);
-  });
-  it('Items should be update if Completed', () => {
-    clearAll();
-  });
+// Test addTask function
+test('should add a task to the todoList array', () => {
+  const task = {
+    description: 'test',
+    completed: false,
+    index: 0,
+  };
+  const result = addTask(task);
+  expect(result).toEqual([{
+    description: 'test',
+    completed: false,
+    index: 0,
+  }]);
+});
+
+// Test deleteTask function
+test('should delete a task from the todoList array', () => {
+  const task = {
+    description: 'test',
+    completed: false,
+    index: 0,
+  };
+  const result = deleteTask(task);
+  expect(result).toEqual([]);
 });
