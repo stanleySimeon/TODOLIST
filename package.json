@@ -13,19 +13,18 @@
     "dev": "webpack",
     "start": "webpack serve --open",
     "build": "webpack",
-    "deploy": "gh-pages -d dist",
     "test": "jest --coverage",
     "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stanleySimeon/TODO.git"
+    "url": "git+https://github.com/stanleySimeon/TODOLIST.git"
   },
   "keywords": [],
   "author": "Stanley SIMEON",
   "license": "ISC",
   "bugs": {},
-  "homepage": "https://github.com/stanleySimeon/TODO#readme",
+  "homepage": "https://github.com/stanleySimeon/TODOLIST/dist/index.html",
   "devDependencies": {
     "@hint/connector-local": "^3.2.24",
     "@hint/formatter-stylish": "^3.1.33",
