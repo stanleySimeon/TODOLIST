@@ -39,8 +39,11 @@ const editTask = (index, description) => {
  * @param newIndex - The new index of the task.
  */
 const dragTask = (index, newIndex) => {
-  const task = toDoList[index];
-  toDoList.splice(index, 1);
+  if (index < 0 || index >= toDoList.length || newIndex < 0 || newIndex >= toDoList.length) {
+    // index or newIndex is out of range
+    return;
+  }
+  const [task] = toDoList.splice(index, 1);
   toDoList.splice(newIndex, 0, task);
   localStorage.setItem('toDoList', JSON.stringify(toDoList));
 };

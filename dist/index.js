@@ -512,8 +512,11 @@ const editTask = (index, description) => {
  * @param newIndex - The new index of the task.
  */
 const dragTask = (index, newIndex) => {
-  const task = toDoList[index];
-  toDoList.splice(index, 1);
+  if (index < 0 || index >= toDoList.length || newIndex < 0 || newIndex >= toDoList.length) {
+    // index or newIndex is out of range
+    return;
+  }
+  const [task] = toDoList.splice(index, 1);
   toDoList.splice(newIndex, 0, task);
   localStorage.setItem('toDoList', JSON.stringify(toDoList));
 };
@@ -668,24 +671,26 @@ addButton.addEventListener('click', () => {
 });
 
 (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.getTasks)().forEach((task) => {
-  const li = document.createElement('li');
-  li.style.display = 'flex';
-  li.classList.add('item');
-  li.style.justifyContent = 'space-between';
-  li.style.padding = '10px 8px';
-  li.style.borderBottom = '1px solid #ccc';
-  li.innerHTML = `
-    <span class="w-11/12 flex items-center space-x-2">
-      <input type="checkbox" class="checkbox w-5 h-5" ${task.completed ? 'checked' : ''}>
-      <p class="description">${task.description}</p>
-    </span>
-    <span class="w-1/12 flex justify-center items-center">
-      <button class="delete-btn w-5 hidden"><img src="/src/asset/delete.png" alt="delete"></button>
-      <button class="drag-btn edit-btn w-5"><img src="/src/asset/dot-vertical-filled.svg" alt="delete"></button>
-    </span>
-
-  `;
-  document.querySelector('.input-list').appendChild(li);
+  if (task) {
+    const li = document.createElement('li');
+    li.style.display = 'flex';
+    li.classList.add('item', 'drag-btn');
+    li.setAttribute('draggable', 'true');
+    li.style.justifyContent = 'space-between';
+    li.style.padding = '10px 8px';
+    li.style.borderBottom = '1px solid #ccc';
+    li.innerHTML = `
+      <span class="w-11/12 flex items-center space-x-2">
+        <input type="checkbox" class="checkbox w-5 h-5" ${task.completed ? 'checked' : ''}>
+        <p class="description">${task.description}</p>
+      </span>
+      <span class="w-1/12 flex justify-center items-center">
+        <button class="delete-btn w-5 hidden"><i class="fas fa-trash-alt text-gray-500"></i></button>
+        <button class="drag-btn edit-btn w-5"><i class="fas fa-ellipsis-v text-gray-500 cursor-move"></i></button>
+      </span>
+    `;
+    document.querySelector('.input-list').appendChild(li);
+  }
 });
 
 const checkboxes = document.querySelectorAll('.checkbox');
@@ -726,12 +731,18 @@ editButtons.forEach((button, index) => {
     input.addEventListener('keyup', (e) => {
       if (e.key === 'Enter') {
         (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.editTask)(index, input.value);
+        window.location.reload();
       }
     });
 
     input.addEventListener('blur', () => {
       (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.editTask)(index, input.value);
-      window.location.reload();
+      const p = document.createElement('p');
+      p.classList.add('description');
+      p.textContent = input.value;
+      input.replaceWith(p);
+      deleteButton.classList.add('hidden');
+      editButton.classList.remove('hidden');
     });
 
     deleteButton.addEventListener('click', () => {
@@ -745,8 +756,20 @@ editButtons.forEach((button, index) => {
 const dragButtons = document.querySelectorAll('.drag-btn');
 
 dragButtons.forEach((button, index) => {
-  button.addEventListener('dragstart', () => {
-    (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.dragTask)(index);
+  button.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', index.toString());
+  });
+
+  button.addEventListener('dragover', (e) => {
+    e.preventDefault();
+  });
+
+  button.addEventListener('drop', (e) => {
+    e.preventDefault();
+    const oldIndex = parseInt(e.dataTransfer.getData('text/plain'), 10);
+    const newIndex = index;
+    (0,_modules_todo_js__WEBPACK_IMPORTED_MODULE_1__.dragTask)(oldIndex, newIndex);
+    undefined.render();
   });
 
   button.addEventListener('dragend', () => {
