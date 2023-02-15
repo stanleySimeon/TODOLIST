@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>TODO LIST</b></h3>
+  <h3><b>TO-DO LIST</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 TODO LIST <a name="about-project"></a>
+# 📖 TO-DO LIST <a name="about-project"></a>
 
 **TODO LIST** The To-Do List is a user-friendly web application designed to display a task list, allowing you to add and remove tasks as needed. It is crafted using modern web technologies, such as JavaScript with WebPack Configuration, to provide a seamless and efficient experience.
 
