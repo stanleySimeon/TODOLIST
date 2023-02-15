@@ -75,6 +75,7 @@
     "@lhci/cli": "^0.10.0",
     "ember": "^1.0.3",
     "lodash": "^4.17.21",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.4",
+    "html-webpack-plugin": ""
   }
 }
