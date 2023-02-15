@@ -14,9 +14,10 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
-    "import/extensions": [ 1, {
-      "js": "always", "json": "always"
-    }]
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off"
   },
   "ignorePatterns": [
     "dist/",
