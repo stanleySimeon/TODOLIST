@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 XDev CONF <a name="about-project"></a>
+# 📖 TODO LIST <a name="about-project"></a>
 
 **TODO LIST** is a simple web application that allows users to create projects and to-do tasks and organize them. The project is built using JavaScript, HTML, and Tailwind CSS. The project is part of the Microverse curriculum. The goal of this project is to learn how to use webpack and ES6 modules, to set up a javascript application made of different modules using webpack, and to use proper ES6 syntax.
 
